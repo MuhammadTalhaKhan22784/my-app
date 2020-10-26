@@ -1,0 +1,50 @@
+
+.navbar-brand{
+    color: rgb(255, 255, 255) !important;
+    
+}
+.navbar{
+    padding-top: 20px;
+}
+.navbar-brand:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.main-nav{
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.btn-get{
+    border-radius: 3px;
+    background: rgb(5, 177, 105);
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 3px 10px;
+    margin-left: 6px;
+    margin-top: 7px;
+
+}
+
+.nav-items-2{
+    display: flex !important;
+    align-items: center;
+}
+
+.nav-link{
+    color: rgb(255, 255, 255) !important;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.nav-link:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+a{
+    color: black !important;
+    }
+a:hover{
+    text-decoration: none;
+}

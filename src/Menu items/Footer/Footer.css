@@ -1,0 +1,18 @@
+.Footer {
+    margin-top: 100px;
+}
+.footer-rights{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.footer-details{   
+    padding: 20px;
+}
+
+.copyright-span{
+    display: flex;
+    background-color: #F7F9FA;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}

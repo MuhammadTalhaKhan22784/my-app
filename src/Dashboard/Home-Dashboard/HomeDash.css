@@ -1,0 +1,123 @@
+.HomeDash-bg {
+  background-color: #f7f9fa !important;
+  height:1500px;
+}
+
+.homeDash-navbar {
+  background-color: #3c3d4f !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: white;
+  color: #3c3d4f !important;
+  border-radius: 0;
+}
+
+.navbar-brand-home-dash {
+  color: white !important;
+  padding: 7px 10px;
+  margin-top: -19px;
+  font-size: 25px !important;
+  font-weight: bold;
+}
+.home-dash-nav .nav-link {
+  color: white;
+  margin-left: 20px;
+}
+
+hr {
+  margin-top: 0;
+}
+
+.watchlist-dashboard {
+  width: 100%;
+  height: 300px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(236, 239, 241);
+  box-shadow: rgba(17, 51, 83, 0.02) 0px 4px 12px 0px;
+  background-color: rgb(255, 255, 255);
+}
+.watchlist-items-1 {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(236, 239, 241);
+  align-items: center;
+  padding: 15px 24px;
+}
+.watchlist-txt h2 {
+  line-height: 1.3;
+  color: rgb(5, 15, 25);
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0px;
+}
+.watchlist-edit-items {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+.viewIcon {
+  margin-right: 10px;
+  font-size: 2rem;
+  color: blue;
+}
+.viewListIcon {
+  font-size: 2rem;
+  color: blue;
+}
+.watchlist-edit-items p {
+  margin-bottom: 0px;
+  padding-right: 10px;
+}
+.Watchlist-Rapper {
+  display: flex;
+}
+.Watchlist-chart {
+  width: 50%;
+}
+.Watchlist-chart-item-1 {
+  padding: 10px;
+  border-right: 1px solid rgb(236, 239, 241);
+  height: 243px;
+}
+.waatch-cont {
+  display: flex;
+  justify-content: space-between;
+}
+.icon-bitcoin {
+  width: 30px;
+  height: 30px;
+  margin-right: 9px;
+}
+.Discover-asset {
+  width: 50%;
+  justify-content: center !important;
+  display: flex;
+  align-items: center;
+}
+.Discover-asset a {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(22, 82, 240) !important;
+}
+
+.user-menu{
+  margin-left: 700px !important;
+}
+
+.user-item{
+  width: 0px !important;
+  top: 103%;
+  left: -64px;
+}
+
+.user-item a{
+  color: #3c3d4f !important;
+}
+.MuiSvgIcon-root{
+  content: none;
+}
