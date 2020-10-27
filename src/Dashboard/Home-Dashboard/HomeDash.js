@@ -30,7 +30,7 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 const HomeDash = () => {
     const [coin, setCoin] = useState([]);
-
+    // let currentUser = localStorage.getItem('currentUser')
     useEffect(() => {
         const fetchData = async () => {
             const response = await Apis.get("/market/get-market-summary'", {

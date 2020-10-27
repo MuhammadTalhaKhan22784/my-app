@@ -5,7 +5,7 @@ import './Prices.css'
 const Prices = () => {
     return (
         <>
-        <div className="price-bg">
+        <div className="price-bg"> 
         <Navbar/>
         <Price/>
         </div>

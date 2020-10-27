@@ -1,4 +1,26 @@
-.coin-container {
+.price-table{
+  position: relative;
+  top: 100px;
+  background-color: white;
+  border: 1px solid rgb(236, 239, 241);
+  border-radius: 4px;
+  box-shadow: rgba(17, 51, 83, 0.02) 0px 4px 12px 0px;
+  }
+
+  .red {
+    color: #f00606;
+  }
+  
+  .green {
+    color: #11d811;
+  }
+
+.coin-btn{
+  cursor: pointer;
+}
+
+
+/* .coin-container {
   display: flex;
   justify-content: center;
 }
@@ -72,4 +94,4 @@
 
 .green {
   color: #11d811;
-}
+} */
