@@ -2,23 +2,21 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../../Components/Header/Navbar/Navbar'
 import './Signin.css'
-
+import SigninImg from '../../Images/signin-img.png'
 
 const Signin = () => {
     return (
         <>
             <div className="signin-Section-bg">
                 <Navbar />
-                <p className="signin-text">Sign in to CoinBase</p>
+               
+                <form className="signIn-form">
 
-                <div className="signIn-form">
-                    {/* <div className="signIn-form-1">
-                            <h1>Welcome To</h1>
-                            <h2>PixelChange</h2>
-                    </div> */}
-
-                    <form className="signIn-form-2">
-
+                    <div className="form-group1">
+                        <img src={SigninImg}></img>
+                    <h2>Sign in</h2> 
+                    </div>
+                    <div className="signIn-form-2">
                         <div class="form-group-2">
                             <label for="exampleDropdownFormEmail2">Email</label>
                             <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="Email"></input>
@@ -34,11 +32,12 @@ const Signin = () => {
                                 Keep me signed in on this computer</label>
                         </div>
                         <div class="form-group-5">
-                            <button type="submit" class="btn btn-primary signin-btn"><Link to="homedash">Sign in</Link></button>
+                            <button type="submit" class="signin-btn"><Link to="homedash">Sign in</Link></button>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
+        
 
         </>
     )

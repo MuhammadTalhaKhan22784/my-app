@@ -1,50 +1,76 @@
-
-.navbar-brand{
-    color: rgb(255, 255, 255) !important;
-    
-}
-.navbar{
-    padding-top: 20px;
-}
-.navbar-brand:hover{
-    color: rgb(255, 255, 255);
-    cursor: pointer;
+body{
+  width:100% !important;
 }
 
-.main-nav{
-    display: flex !important;
-    justify-content: space-between !important;
+.navbar-brand {
+  color: rgb(255, 255, 255) !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+.navbar {
+  padding: 20px 104px;
+}
+.navbar-brand:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.btn-getstarted {
+  background-color: #05b169 !important;
+  color: white !important;
+}
+.btn-getstarted a {
+  color: white !important;
 }
 
-.btn-get{
-    border-radius: 3px;
-    background: rgb(5, 177, 105);
-    color: rgb(255, 255, 255);
-    font-size: 12px;
-    padding: 3px 10px;
-    margin-left: 6px;
-    margin-top: 7px;
-
+.main-nav {
+  /* display: flex !important;
+    justify-content: space-between !important; */
 }
 
-.nav-items-2{
-    display: flex !important;
-    align-items: center;
+.btn-get {
+  border-radius: 3px;
+  background: rgb(5, 177, 105);
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  padding: 3px 10px;
+  margin-left: 6px;
+  margin-top: 7px;
 }
 
-.nav-link{
-    color: rgb(255, 255, 255) !important;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
+.btn-get:hover {
+  color: white;
 }
-.nav-link:hover{
-    color: rgb(255, 255, 255);
-    cursor: pointer;
+
+.nav-items-2 {
+  display: flex !important;
+  align-items: center;
 }
-a{
-    color: black !important;
-    }
-a:hover{
-    text-decoration: none;
+
+.nav-link {
+  color: rgb(255, 255, 255) !important;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px !important;
 }
+.nav-link:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.signin-link {
+  color: rgb(255, 255, 255) !important;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif !important;
+  letter-spacing: 1px !important;
+}
+a {
+  color: black !important;
+}
+a:hover {
+  text-decoration: none;
+}
+

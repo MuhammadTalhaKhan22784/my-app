@@ -1,7 +1,9 @@
 import React from 'react'
 import Navbar from '../../Components/Header/Navbar/Navbar'
 import './GetStarted.css'
+import Footer from '../Footer/Footer'
 import Signup from './Signup/Signup'
+
 
 const GetStarted = () => {
     return (

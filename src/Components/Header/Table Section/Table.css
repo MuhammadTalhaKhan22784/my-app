@@ -1,21 +1,53 @@
-.asset-table {
-  position: relative;
-  top: -100px;
-  background-color: white;
-  border: 1px solid rgb(236, 239, 241);
-  border-radius: 4px;
-  box-shadow: rgba(17, 51, 83, 0.02) 0px 4px 12px 0px;
+
+.table-container{
+  display: flex;
+  justify-content: center;
 }
+
+.asset-table {
+  box-shadow: 2px 6px 24px 4px #1b171a8f;
+  background-color: rebeccapurple;
+  border-radius: 14px;
+  width: 80%;
+
+  /* border-radius: 4px;
+  box-shadow: 1px 1px 2px lightgrey;
+  border: 1px solid rgb(236, 239, 241); */
+}
+
 .th-name {
-  width: 400px;
+  /* width: 200px; */
+}
+tr {
+  /* border: 2px solid rgb(236, 239, 241); */
+  /* box-shadow:  2px 2px 2px rgba(17, 51, 83, 0.02); */
+}
+.td-white {
+  color: white;
 }
 .table td,
 .table th {
+  border: none !important;
   line-height: 44px;
 }
+
+.th-name {
+  color: #dc82cd;
+  font-size: 18px;
+}
+
+.spark-chart{
+  width: 120px;
+  height: 20px;
+}
+
 .coin-icon {
   display: flex;
   align-items: center;
+}
+.table tr:hover {
+  background: #cc7dd64d;
+  transition: 0.7s ease;
 }
 .coin-icon img {
   width: 30px;
@@ -23,9 +55,9 @@
 }
 
 .coin-icon h5 {
-  color: rgb(5, 15, 25);
+  color: white;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.3;
   padding-left: 16px;
   margin-top: 5px;
@@ -34,7 +66,7 @@
 .coin-icon span {
   padding-left: 18px;
   line-height: 1.3;
-  color: rgba(17, 51, 83, 0.6);
+  color: white;
   font-size: 18px;
   font-weight: 400;
 }

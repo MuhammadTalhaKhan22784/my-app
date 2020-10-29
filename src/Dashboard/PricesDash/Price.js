@@ -47,14 +47,7 @@ function Price() {
         </div>
       </div>
       <Coin coins={filterCoins}></Coin>
-      {/* {filteredCoins.map(coin => {
-        return (
-          <>
-   
-
-          </>
-        );
-      })} */}
+     
     </>
   )
 }

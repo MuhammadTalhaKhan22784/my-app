@@ -7,6 +7,13 @@ import Bitcoin from '../../Images/bitcoinIcon.png';
 import LineChart from '../../Components/Common/LineChart'
 import Price from '../PricesDash/Price';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import MainDashboard from '../RobinhoodDashboard/MainDashboard';
+import PieChart from '../../Components/Common/PieChart';
+
+import CoinSummaryPage from "../RobinhoodDashboard/pages/CoinSummaryPage";
+import { WatchListContextProvider } from "../RobinhoodDashboard/context/watchListContext";
+
+
 // export const CoinData = (props) => {
 //     const [coin, setCoin] = useState([]);
 //     useEffect(() => {
@@ -33,7 +40,7 @@ const HomeDash = () => {
     // let currentUser = localStorage.getItem('currentUser')
     useEffect(() => {
         const fetchData = async () => {
-            const response = await Apis.get("/market/get-market-summary'", {
+            const response = await Apis.get('/market/get-market-summary', {
                 params: {
                     vs_currency: "usd",
                     id: "bitcoin"
@@ -67,9 +74,12 @@ const HomeDash = () => {
                                 <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Prices</a>
                             </li>
                             <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-trade-tab" data-toggle="pill" href="#pills-trade" role="tab" aria-controls="pills-trade" aria-selected="false">Trade</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
                                 <div class="dropdown user-menu">
                                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                       <AccountCircleIcon/>
+                                        <AccountCircleIcon />
                                     </button>
                                     <div class="dropdown-menu user-item" aria-labelledby="dropdownMenuButton">
                                         <a class="dropdown-item" href="#">User Name</a>
@@ -86,7 +96,7 @@ const HomeDash = () => {
                 <div class="tab-content container" id="pills-tabContent">
 
 
-                    <div class="tab-pane watchlist-dashboard fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="tab-pane watchlist-dashboard fade show active " data-aos="flip-left" data-aos-delay="80" data-aos-duration="3000" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" >
 
                         <div className="watchlist-items-1">
                             <div className="watchlist-txt"><h2>Watchlist</h2></div>
@@ -97,16 +107,16 @@ const HomeDash = () => {
                             </div>
                         </div>
                         <div className="Watchlist-Rapper">
-                            <div className="Watchlist-chart">
-                                <div className="Watchlist-chart-item-1">
+                            <div className="Watchlist-chart" >
+                                <div className="Watchlist-chart-item-1" >
                                     <div className="waatch-cont">
-                                        <div className="Watchlist-chart-txt-img">
+                                        <div className="Watchlist-chart-txt-img" >
                                             <img className="icon-bitcoin" src={Bitcoin}></img>
 
-                                         return(
-                                         <span>{coin.id}</span>)
 
-                                    </div>
+                                            <span>Bitcoin</span>
+
+                                        </div>
                                         <div><p type="button">24h</p></div>
                                     </div>
                                     <div>
@@ -119,8 +129,92 @@ const HomeDash = () => {
                                 <a >Discover more assets </a>
                             </div>
                         </div>
+                        <div className="home-portfolio">
+                            <div className="hp-div-1">
+
+                                <div className="yp-txt">
+                                    <h2>Your Portfolio</h2>
+                                </div>
+
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link yp-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">List</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link yp-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Chart</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" data-aos="flip-right" data-aos-delay="80" data-aos-duration="3000" id="home" role="tabpanel" aria-labelledby="home-tab">.
+                                <table class="table yp-table">
+
+                                            <tbody>
+                                                <tr>
+                                                    <td>Bitcoin</td>
+                                                    <td>0%</td>
+                                                    <td>0Band</td>
+                                                    <td>PKR 0.00</td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td>Bitcoin</td>
+                                                    <td>0%</td>
+                                                    <td>0Band</td>
+                                                    <td>PKR 0.00</td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td>Bitcoin</td>
+                                                    <td>0%</td>
+                                                    <td>0Band</td>
+                                                    <td>PKR 0.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bitcoin</td>
+                                                    <td>0%</td>
+                                                    <td>0Band</td>
+                                                    <td>PKR 0.00</td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td>Bitcoin</td>
+                                                    <td>0%</td>
+                                                    <td>0Band</td>
+                                                    <td>PKR 0.00</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                        <div className="pie-div" >
+                                            <PieChart />
+                                        </div>
+
+                                    </div>
+                                    <div className="total-balance-div">
+                                        <h2>Total Balance = PKR 0.00</h2>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className="hp-div-2" data-aos="flip-up" data-aos-delay="80" data-aos-duration="3000">
+                            <div className="hp-div-2-txt"><h2>Recent Transactions</h2></div>
+                            <div className="hp-div-2-para">
+                                <p>You don’t own any crypto. Send yourself some crypto to get started.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+
+
+
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <WatchListContextProvider>
+                        <CoinSummaryPage />
+                    </WatchListContextProvider>
+
+                    </div>
                     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
 
                         <Price />

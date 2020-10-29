@@ -8,13 +8,13 @@ const Coin = ({ coins }) => {
               <table class="table price-table">
                   <thead>
                       <tr>
-                          <th scope="col">S.NO</th>
+                          <th className="th-name" scope="col">S.NO</th>
                           <th className="th-name" scope="col">Name</th>
-                          <th scope="col">Price</th>
-                          <th scope="col">Change</th>
-                          <th scope="col">Market Cap</th>
-                          <th scope="col">Trade</th>
-                          <th scope="col">Watch</th>
+                          <th className="th-name" scope="col">Price</th>
+                          <th className="th-name" scope="col">Change</th>
+                          <th className="th-name" scope="col">Market Cap</th>
+                          <th className="th-name" scope="col">Trade</th>
+                          <th className="th-name" scope="col">Watch</th>
                           
                       </tr>
                   </thead>
@@ -22,7 +22,7 @@ const Coin = ({ coins }) => {
 
                       {(coins.length > 0) && coins.map((coins, index) => {
                           return (
-                              <tr key={coins.id}>
+                              <tr className="s-no" key={coins.id}>
                                   <td >
                                     {index + 1}
                                   </td>

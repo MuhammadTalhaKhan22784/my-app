@@ -4,7 +4,10 @@ import Header from '../../Components/Header/Header'
 import Table from '../../Components/Header/Table Section/Table'
 import CryptoOverview from '../../Components/Header/cryptoPortfolioSection/CryptoOverview';
 import Footer from '../Footer/Footer';
-
+import './Home.css'
+import AccountOverview from '../../Components/Header/CryptoAccountSection/AccountOverview';
+import PortfolioOverview from '../../Components/Header/PortfolioOverviewSection/PortfolioOverview';
+import TradeOverview from '../../Components/Header/TradeOverviesSection/TradeOverview';
 const Home = () => {
 
     const [coins, setCoins] = useState([]);
@@ -23,10 +26,16 @@ const Home = () => {
 
     return (
         <>
-            <Header></Header>
-            <Table coins={coins}></Table>
-            <CryptoOverview/>
-            <Footer/>
+            <div className="main-home">
+                <Header></Header>
+                <Table coins={coins}></Table>
+                <CryptoOverview />
+                <AccountOverview/>
+                <PortfolioOverview/>
+                <TradeOverview/>
+                <Footer />
+
+            </div>
         </>
     )
 }

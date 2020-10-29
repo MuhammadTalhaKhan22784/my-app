@@ -1,18 +1,24 @@
 .price-table{
   position: relative;
-  top: 100px;
-  background-color: white;
-  border: 1px solid rgb(236, 239, 241);
-  border-radius: 4px;
-  box-shadow: rgba(17, 51, 83, 0.02) 0px 4px 12px 0px;
+  top: 50px;
+  box-shadow: 2px 6px 24px 4px #1b171a8f;
+  background-color: rebeccapurple;
+  border-radius: 14px;
   }
 
+  .s-no{
+    color: white;
+    font-weight: bold;
+  }
   .red {
-    color: #f00606;
+  
+    color: #f55252;
+    font-weight: bold;
   }
   
   .green {
     color: #11d811;
+    font-weight: bold;
   }
 
 .coin-btn{

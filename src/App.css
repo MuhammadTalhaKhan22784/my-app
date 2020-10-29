@@ -1,3 +1,57 @@
+
+ul {
+  list-style: none;
+}
+
+.coinlist-image {
+  width: 50px;
+}
+
+.coinlist-item {
+  display: flex;
+}
+
+.coinsummary {
+  border-color: white !important;
+  border-style: outset !important;
+}
+
+.coin-data-category {
+  font-size: 10px;
+}
+
+.delete-icon {
+  display: none;
+  position: absolute;
+  right: 6px;
+}
+
+.coin:hover .delete-icon {
+  display: block;
+}
+.coinsummary{
+  margin-top: 100px !important;
+  box-shadow: 2px 6px 24px 4px #1b171a8f !important;
+  background-color: #66339973 !important;
+  border-radius: 14px !important;
+  border: none !important;
+}
+
+.coinlist-item{
+  background-color: rebeccapurple !important;
+  box-shadow: 2px 6px 24px 4px #1b171a8f !important;
+  border-radius: 12px !important;
+}
+
+.coinlist-item span{
+  color: white ;
+  font-weight: bold !important;
+}
+
+
+
+
+
 /* .App {
   text-align: center;
 }

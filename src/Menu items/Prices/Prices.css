@@ -1,5 +1,13 @@
 .price-bg{
-    background-color: #3C3D4F;
-    height:900px !important;
+    background: linear-gradient(
+        to left,
+        #6441a5,
+        #2a0845
+      ); 
+      height: 1435px;
     width: 100%;
+}
+
+.price-bg .coin-search{
+    display: none;
 }
