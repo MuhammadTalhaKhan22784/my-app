@@ -5,13 +5,13 @@ import Footer from '../Footer/Footer'
 import Signup from './Signup/Signup'
 
 
-const GetStarted = () => {
+const GetStarted = ({bgColor}) => {
     return (
         <>
             <div className="getStarted-Section-bg">
-                <Navbar />
+                <Navbar bgColor={bgColor} />
                 <p className="create-account-text">Create your account</p>
-            <Signup/>
+                <Signup/>
             </div>
         </>
     )

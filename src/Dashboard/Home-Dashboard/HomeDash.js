@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Apis from '../../apis/Apis'
 import './HomeDash.css'
 import ViewModuleIcon from '@material-ui/icons/ViewModule';
 import ViewHeadlineIcon from '@material-ui/icons/ViewHeadline';
@@ -9,10 +8,10 @@ import Price from '../PricesDash/Price';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import MainDashboard from '../RobinhoodDashboard/MainDashboard';
 import PieChart from '../../Components/Common/PieChart';
-
+import axios from 'axios'
 import CoinSummaryPage from "../RobinhoodDashboard/pages/CoinSummaryPage";
 import { WatchListContextProvider } from "../RobinhoodDashboard/context/watchListContext";
-
+import Portfolio from '../PortfolioDashboard/Portfolio';
 
 // export const CoinData = (props) => {
 //     const [coin, setCoin] = useState([]);
@@ -36,33 +35,53 @@ import { WatchListContextProvider } from "../RobinhoodDashboard/context/watchLis
 
 
 const HomeDash = () => {
-    const [coin, setCoin] = useState([]);
-    // let currentUser = localStorage.getItem('currentUser')
-    useEffect(() => {
-        const fetchData = async () => {
-            const response = await Apis.get('/market/get-market-summary', {
-                params: {
-                    vs_currency: "usd",
-                    id: "bitcoin"
-                },
-            });
-            setCoin(response.data);
-            console.log(response.data)
-        };
 
-        fetchData();
+    const token = '846d3c72-761d-41ce-86cb-70204678ec31'
+    useEffect(() => {
+
+        // axios.post('https://node1.pixelexchange.com/api/SignUp', {
+        //     firstname: "xxxx",
+        //     middlename: "xxxx",
+        //     lastname: "xxxx",
+        //     email: "majaruzuh@rsvhr.com",
+        //     country: "UK",
+        //     mobile: "44444",
+        //     password: "Hell1@o1om",
+        //     referralId: 250252
+        // }, {
+        //     headers: {
+        //         'Authorization': `Bearer ${token}`,
+        //         'HMAC': `96F3C7EDC46D790ECEB980D743865CCC0AB53B9969EC5A749546500FB8C048D6078D780415FEA40779A0453A6240CC5A2DE8374ED3AF9D0D89F3FC2F7CFBDA18`
+        //         , 'Access-Control-Allow-Origin': '*'
+        //     }
+        // })
+
+        axios.get('https://node1.pixelexchange.com/market/get-bid_ask-price/BTC_ETH', {
+            headers: {
+                'Authorization': `Bearer ${token}`,
+                'HMAC': `96F3C7EDC46D790ECEB980D743865CCC0AB53B9969EC5A749546500FB8C048D6078D780415FEA40779A0453A6240CC5A2DE8374ED3AF9D0D89F3FC2F7CFBDA18`
+                , 'Access-Control-Allow-Origin': '*'
+            }
+        })
+            .then((res) => {
+                console.log('abcd: ', res.data)
+            })
+            .catch((error) => {
+                console.error('efg :', error)
+            })
     }, []);
     return (
 
         <>
             <div className="HomeDash-bg">
                 <nav class="homeDash-navbar navbar navbar-expand-lg navbar-light  ">
-                    <a class="navbar-brand navbar-brand-home-dash" href="#">PixelExchange</a>
+                    
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
+                    
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <a class="navbar-brand navbar-brand-home-dash" href="#">PixelExchange</a>
                         <ul class="nav nav-pills home-dash-nav mb-3" id="pills-tab" role="tablist">
                             <li class="nav-item " role="presentation">
                                 <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
@@ -74,7 +93,7 @@ const HomeDash = () => {
                                 <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Prices</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="pills-trade-tab" data-toggle="pill" href="#pills-trade" role="tab" aria-controls="pills-trade" aria-selected="false">Trade</a>
+                                <a class="nav-link" id="pills-portfolio-tab" data-toggle="pill" href="#pills-portfolio" role="tab" aria-controls="pills-portfolio" aria-selected="false">Portfolio</a>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <div class="dropdown user-menu">
@@ -129,8 +148,8 @@ const HomeDash = () => {
                                 <a >Discover more assets </a>
                             </div>
                         </div>
-                        <div className="home-portfolio">
-                            <div className="hp-div-1">
+                        <div className="home-portfolio container">
+                            <div className="hp-div-1 ">
 
                                 <div className="yp-txt">
                                     <h2>Your Portfolio</h2>
@@ -198,26 +217,30 @@ const HomeDash = () => {
                                 </div>
 
                             </div>
-                        </div>
-                        <div className="hp-div-2" data-aos="flip-up" data-aos-delay="80" data-aos-duration="3000">
-                            <div className="hp-div-2-txt"><h2>Recent Transactions</h2></div>
-                            <div className="hp-div-2-para">
-                                <p>You don’t own any crypto. Send yourself some crypto to get started.</p>
+                            <div className="hp-div-2 container" data-aos="flip-up" data-aos-delay="80" data-aos-duration="3000">
+                                <div className="hp-div-2-txt"><h2>Recent Transactions</h2></div>
+                                <div className="hp-div-2-para">
+                                    <p>You don’t own any crypto. Send yourself some crypto to get started.</p>
+                                </div>
                             </div>
                         </div>
+
                     </div>
 
 
 
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    <WatchListContextProvider>
-                        <CoinSummaryPage />
-                    </WatchListContextProvider>
+                        <WatchListContextProvider>
+                            <CoinSummaryPage />
+                        </WatchListContextProvider>
 
                     </div>
                     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
 
                         <Price />
+                    </div>
+                    <div class="tab-pane fade" id="pills-portfolio" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <Portfolio/>
                     </div>
                 </div>
             </div>

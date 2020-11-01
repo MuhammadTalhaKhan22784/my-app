@@ -4,11 +4,11 @@ import Navbar from '../../Components/Header/Navbar/Navbar'
 import './Signin.css'
 import SigninImg from '../../Images/signin-img.png'
 
-const Signin = () => {
+const Signin = ({bgColor}) => {
     return (
         <>
             <div className="signin-Section-bg">
-                <Navbar />
+                <Navbar bgColor={bgColor}/>
                
                 <form className="signIn-form">
 

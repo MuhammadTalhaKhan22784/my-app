@@ -1,6 +1,6 @@
 .HomeDash-bg {
   background: linear-gradient(to left, #6441a5, #2a0845);
-  height: 1900px;
+  height: 1500px;
 }
 
 .homeDash-navbar {
@@ -15,11 +15,14 @@
   color: #3c3d4f !important;
   border-radius: 0;
 }
+.navbar-toggler:focus{
+  outline: none;
+}
 
 .navbar-brand-home-dash {
   color: white !important;
   padding: 7px 10px;
-  margin-top: -19px;
+  margin-top: -18px;
   font-size: 25px !important;
   font-weight: bold;
 }
@@ -109,7 +112,7 @@ hr {
 }
 
 .user-menu {
-  margin-left: 700px !important;
+  margin-left: 490px !important;
 }
 
 .user-item {
@@ -140,15 +143,16 @@ hr {
 }
 
 .yp-table {
-  box-shadow: 2px 6px 24px 4px #1b171a8f;
+  box-shadow: 3px 5px 26px 9px #1b171a8f;
   background-color: #62298a;
   border-radius: 14px;
-  width: 60%;
+  width: 87%;
   cursor: pointer;
   margin-top: 20px;
 }
-.yp-table td{
+.yp-table td {
   color: white !important;
+  padding-left: 30px !important;
 }
 .hp-nav-pills {
   margin-left: 150px;
@@ -159,18 +163,20 @@ hr {
 }
 
 .hp-div-2 {
-  margin-top: 100px;
-  width: 48%;
+  margin-top: 186px;
+  width: 47%;
   box-shadow: 2px 6px 24px 4px #1b171a8f;
-    background-color: #62298a;
-    border-radius: 14px;
-  height: 400px;
+  background-color: #62298a;
+  border-radius: 14px;
+  height: 325px;
 }
 .hp-div-2-txt {
   border: 1px solid #4e3c6f;
   border-radius: 14px 14px 0 0;
+  margin-left: -14px;
   box-shadow: 2px 6px 24px 4px #1b171a8f;
   background-color: #62298a;
+  width: 505px;
   border-radius: -3px;
 }
 .hp-div-2-txt h2 {
@@ -185,7 +191,6 @@ hr {
   color: white !important;
   font-size: 18px;
   padding-left: 10px;
-
 }
 
 .yp-txt h2 {
@@ -208,8 +213,9 @@ hr {
   box-shadow: 2px 6px 24px 4px #1b171a8f;
   background-color: #3f2477 !important;
   border-radius: 14px;
-  width: 43%;
+  width: 88%;
   height: 50px;
+  margin-left: -6px;
   margin-top: 20px;
 }
 .total-balance-div h2 {

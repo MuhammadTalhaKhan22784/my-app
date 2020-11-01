@@ -4,13 +4,13 @@ import Price from '../../Dashboard/PricesDash/Price'
 import Footer from '../Footer/Footer'
 import './Prices.css'
 
-const Prices = () => {
+const Prices = ({bgColor}) => {
     return (
         <>
         <div className="price-bg"> 
-        <Navbar/>
+        <Navbar bgColor={bgColor}/>
         <Price/>
-        <Footer/>
+      
         </div>
         </>
     )

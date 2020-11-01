@@ -1,0 +1,32 @@
+.rickAdvisory-bg{
+    width: 100%;
+    height: 1577px;}
+
+.rickAdvisory-bg .copyright-span{
+    margin-top: 180px;
+}
+
+.rickAdvisory-main{
+    padding-top: 140px;
+}
+
+.rickAdvisory-rights {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: bold;
+  }
+  .rickAdvisory-details  {
+    padding: 20px;
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+  }
+  .rickAdvisory-details p {
+      text-align: center;
+     
+  }
+  .rickAdvisory-details p {
+    color: white;
+  }

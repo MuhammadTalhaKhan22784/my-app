@@ -4,7 +4,7 @@ import './Coin.css';
 const Coin = ({ coins }) => {
   return (
       <>
-          <div className="container">
+          <div className="container price-table-container">
               <table class="table price-table">
                   <thead>
                       <tr>

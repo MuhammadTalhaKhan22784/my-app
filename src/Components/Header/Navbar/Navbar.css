@@ -1,5 +1,8 @@
-body{
-  width:100% !important;
+body {
+  width: 100% !important;
+}
+.light-mode {
+  background-color: red !important;
 }
 
 .navbar-brand {
@@ -15,6 +18,14 @@ body{
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
+.home-dropdown-menu.dropdown-menu {
+  flex-direction: column !important;
+  width: 164px! important;
+}
+.dropdown-item {
+  display: block;
+  width: 25% !important;}
+
 .btn-getstarted {
   background-color: #05b169 !important;
   color: white !important;
@@ -73,4 +84,16 @@ a {
 a:hover {
   text-decoration: none;
 }
-
+.themes{
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.themes option{
+  background-color: #4C2A7D;
+}
+.themes:focus{
+  outline: none;
+}

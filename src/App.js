@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {
@@ -14,33 +14,50 @@ import Signin from './Menu items/Signin/Signin';
 import HomeDash from './Dashboard/Home-Dashboard/HomeDash';
 import CoinDetailPage from "./Dashboard/RobinhoodDashboard/pages/CoinDetailPage";
 import { WatchListContextProvider } from "./Dashboard/RobinhoodDashboard/context/watchListContext";
+import RickAdvisory from './Menu items/Company/RickAdvisory';
+import PrivacyPolicy from './Menu items/Company/PrivacyPolicy';
+import { purple } from '@material-ui/core/colors';
 export default () => {
+
+  const [color, setColor] = useState([]);
+
+  if (color == "") {
+    setColor("purple")
+  }
+  
   return (
+    <div className={"appColor " + color}>
     <WatchListContextProvider>
       <Router>
         <Switch>
             <Route exact path="/">
-              <Home/>
+              <Home bgColor={setColor}/>
             </Route>
             <Route exact path="/prices">
-              <Prices/>
+              <Prices bgColor={setColor}/>
             </Route>
             <Route exact path="/getStarted">
-              <GetStarted/>
+              <GetStarted bgColor={setColor}/>
             </Route>
             <Route exact path="/signin">
-              <Signin/>
+              <Signin bgColor={setColor}/>
             </Route>
             <Route exact path="/homedash">
-              <HomeDash/>
+              <HomeDash />
             </Route>
             <Route exact path="/coins/:id">
               <CoinDetailPage/>
             </Route>
-          
+            <Route exact path="/rickadvisory">
+              <RickAdvisory bgColor={setColor}/>
+            </Route>
+            <Route exact path="/privacypolicy">
+              <PrivacyPolicy bgColor={setColor}/>
+            </Route>
           </Switch>
       </Router>
     </WatchListContextProvider>
+    </div>
   );
 }
 

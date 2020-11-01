@@ -8,7 +8,8 @@ import './Home.css'
 import AccountOverview from '../../Components/Header/CryptoAccountSection/AccountOverview';
 import PortfolioOverview from '../../Components/Header/PortfolioOverviewSection/PortfolioOverview';
 import TradeOverview from '../../Components/Header/TradeOverviesSection/TradeOverview';
-const Home = () => {
+import AccountProcedure from '../../Components/Header/GetStartdedFewMin/AccountProcedure';
+const Home = ({bgColor}) => {
 
     const [coins, setCoins] = useState([]);
 
@@ -27,11 +28,12 @@ const Home = () => {
     return (
         <>
             <div className="main-home">
-                <Header></Header>
+               
+                <Header bgColor={bgColor}></Header>
                 <Table coins={coins}></Table>
                 <CryptoOverview />
                 <AccountOverview/>
-                <PortfolioOverview/>
+                <AccountProcedure/>
                 <TradeOverview/>
                 <Footer />
 

@@ -2,11 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Header.css'
 import Navbar from './Navbar/Navbar'
-function Header() {
+function Header({bgColor}) {
     return (
         <>
             <div className="header-bg">
-               <Navbar/>
+               <Navbar bgColor={bgColor} />
+
                 <div className="header-headings">
                     
                 <div className="header-txt-1" data-aos="fade-down" data-aos-delay="50" data-aos-duration="2000">

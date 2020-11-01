@@ -1,18 +1,27 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
 }
 
-body{
-  overflow-x:hidden;
+body {
+  overflow-x: hidden;
   width: 100vw;
 }
+.form-check-input {
+  position: absolute;
+  margin-top: 10px;
+}
 @media (max-width: 768px) {
-  body{
-    overflow-x:hidden !important;
+  body {
+    overflow-x: hidden !important;
     width: 100vw !important;
+  }
+  select.themes {
+    position: absolute !important;
+    color: white;
+    top: 41px !important;
+    margin-left: -62px !important;
   }
   .home-nav {
     margin-top: 30px;
@@ -24,11 +33,11 @@ body{
     flex-direction: column;
     margin-top: 0px !important;
     line-height: 25px;
-    align-items: flex-start;
+    align-items: flex-start !important;
     justify-content: center;
   }
   .home-dropdown-menu {
-    width: 176px !important;
+    width: 166px !important;
   }
   .navbar-light .navbar-toggler {
     color: rgba(0, 0, 0, 0.5);
@@ -66,7 +75,7 @@ body{
     line-height: 35px;
   }
   .Crypto-overview-heading h1 {
-    font-size: 36px;
+    font-size: 36px !important;
   }
   .Crypto-overview-para p {
     font-size: 14px;
@@ -93,42 +102,666 @@ body{
     flex-wrap: wrap;
     justify-content: center;
   }
+  .Crypto-overview-Right {
+    width: 86%;
+  }
+  .Crypto-overview-Right img {
+    width: 639px !important;
+    margin: 0 !important;
+  }
   .acc-overview-content h1 {
     color: white;
     line-height: 46px !important;
+    font-size: 22px;
+  }
+
+  .acc-overview-right img {
+    width: 62% !important;
+    margin-left: 110px !important;
+  }
+  .ps-div-1 h2 {
+    font-size: 36px !important;
+  }
+
+  .ps-div-1 p {
+    font-size: 14px !important;
+  }
+  .ps-div-2 img {
+    margin-left: 29px;
+  }
+  .cr-txt span {
+    color: white;
+    font-size: 16px;
+  }
+  .prt-overview-content h1 {
+    line-height: 46px;
     font-size: 26px;
   }
 
-.acc-overview-right img {
-  width: 62% !important;
-  margin-left: 115px !important;
-}
-.prt-overview-content h1 {
-  line-height: 46px;
-  font-size: 26px;
+  .trade-overview-content h1 {
+    line-height: 46px !important;
+    font-size: 22px;
+  }
+  .trade-overview-right img {
+    width: 62%;
+    margin-left: 110px !important;
+  }
+  .rickAdvisory-details p {
+    color: white;
+    font-size: 14px;
+  }
+  .privacy-main p {
+    font-size: 14px;
+  }
+  .footer-details p {
+    color: white;
+    font-size: 14px;
+  }
+  .signIn-form {
+    width: 648px !important;
+  }
+  .signIn-form-2 {
+    width: 394px !important;
+  }
+  .signup-form-group1 h2 {
+    font-size: 36px !important;
+  }
+  .signUp-form {
+    display: flex;
+    box-shadow: 2px 6px 24px 4px #1b171a8f;
+    background-color: rebeccapurple;
+    border-radius: 14px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 644px !important;
+  }
+  .signUp-form-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 386px !important;
+  }
+  .signUp-form .form-group-5 {
+    margin-top: 20px;
+  }
+  .signIn-form .form-group-5 {
+    margin-top: 60px;
+  }
+  .signin-Section-bg {
+    height: 1088px !important;
+  }
+  .getStarted-Section-bg {
+    height: 1300px;
+  }
+  .price-table-container {
+    padding-right: 15px !important;
+    margin-right: auto !important;
+    margin-left: 0 !important;
+  }
+  .assets-table {
+    margin-left: 32px;
+  }
+  .assets-table th {
+    font-size: 15px;
+  }
+  .assets-heading h2 {
+    font-size: 36px;
+  }
+  .receive {
+    padding-top: 20px;
+    padding-right: 14px;
+  }
+  .transaction h2 {
+    font-size: 22px;
+  }
+  .transaction p {
+    font-size: 14px;
+  }
+  .HomeDash-bg {
+    height: 1875px;
+  }
+  .homeDash-navbar {
+    padding-top: 119px !important;
+    padding-left: 34px !important;
+  }
+  .homeDash-navbar .navbar-toggler {
+  }
+  .home-dash-nav {
+    margin-top: 20px;
+    flex-direction: column !important;
+  }
+  .navbar-brand-home-dash {
+    padding: 7px 38px !important;
+  }
+  .hp-div-2-txt {
+    width: 309px !important;
+  }
+  .hp-div-2-txt h2 {
+    font-size: 20px !important;
+  }
+  .yp-table tr td {
+    color: white !important;
+    padding-left: 16px !important;
+  }
+  .hp-div-2-para p {
+    font-size: 14px !important;
+  }
+  .total-balance-div {
+    width: 82% !important;
+    height: 43px !important;
+    margin-left: 16px !important;
+  }
+  .total-balance-div h2 {
+    color: #ef5e5e;
+    font-size: 20px;
+  }
+  .user-menu {
+    position: relative !important;
+    left: -451px !important;
+    top: -314px !important;
+  }
 }
 
-.trade-overview-content h1 {
-  line-height: 46px !important;
-  font-size: 26px;
-}
-.trade-overview-right img {
-  width: 62%;
-  margin-left: 115px !important;
-}
+@media (max-width: 425px) {
+  .home-nav .nav-link {
+    font-size: 14px;
+  }
+  .header-txt-1 h1 {
+    font-size: 50px !important;
+  }
+  .header-txt-2 h1 {
+    font-size: 20px !important;
+  }
+  .th-name {
+    font-size: 11px !important;
+    padding: 5px !important;
+  }
+  .coin-icon h5 {
+    font-size: 11px !important;
+    margin-top: 16px !important;
+  }
+  .spark-chart {
+    width: 37px !important;
+    height: 8px !important;
+  }
+  .coin-icon img {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .buy-btn {
+    height: 40px !important;
+    padding: 0px 7px !important;
+    font-size: 11px !important;
+  }
+  .th-white {
+    font-size: 11px !important;
+  }
+  .header-para p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    width: 347px;
+    font-family: "Roboto", sans-serif;
+  }
+  .form-inline input.header-search-bar {
+    width: 189px !important;
+  }
+  .search-btn {
+    padding: 11px !important;
+  }
+  .Crypto-overview-heading h1 {
+    line-height: 1.3;
+    font-size: 20px !important;
+  }
+  .Crypto-overview-para p {
+    font-size: 8px;
+  }
+  .co-left-items {
+    display: inline !important;
+  }
+  .co-left-heading {
+    margin-top: 40px;
+  }
+  .co-left-item-heading {
+    font-size: 11px !important;
+  }
+  .co-left-item-para {
+    width: 91%;
+  }
+  .Crypto-overview-Right img {
+    width: 481px !important;
+    margin-top: -120px !important;
+    margin-left: -137px !important;
+  }
+  .acc-overview-section {
+    height: 235px !important;
+  }
+  .acc-overview-right img {
+    margin-left: 59px !important;
+  }
+  .acc-overview-content h1 {
+    font-size: 12px;
+  }
+  .ps-div-1 h2 {
+    font-size: 20px !important;
+  }
+  .ps-div-1 p {
+    font-size: 11px !important;
+  }
+  .ps-div-2 img {
+    width: 57px;
+    height: 57px;
+    margin-left: 25px;
+  }
+  .cr-txt span {
+    font-size: 11px;
+  }
+  .procedureSection {
+    height: 166px;
+  }
+  .trade-overview-content h1 {
+    font-size: 12px;
+  }
+  .trade-overview-right img {
+    width: 62%;
+    margin-left: 65px !important;
+  }
+  .footer-details p {
+    color: white;
+    font-size: 11px;
+  }
+  .copyright-span span {
+    font-size: 12px !important;
+  }
+  .signIn-form {
+    width: 350px !important;
+  }
+  .form-group1 {
+    height: 501px !important;
+
+    padding: 0 20px !important;
+  }
+  .form-group1 img {
+    margin-top: 60px !important;
+    width: 79px !important;
+    height: 150px !important;
+  }
+  .form-group1 h2 {
+    line-height: 0px !important;
+    font-size: 20px !important;
+  }
+  .signIn-form-2 {
+    width: 267px !important;
+  }
+  .form-group-2 {
+    margin-top: 35px !important;
+    width: 238px !important;
+    padding: 0 18px !important;
+  }
+  .form-group-3 {
+    margin-top: 40px !important;
+    width: 200px !important;
+  }
+  .form-group-5 {
+    width: 238px !important;
+  }
+  .form-check {
+    margin-top: 35px !important;
+    width: 204px !important;
+  }
+  .signin-btn {
+    margin-left: -50px !important;
+  }
+  label {
+    color: #e047db !important;
+    font-size: 7px !important;
+  }
+  .price-table-container {
+    padding-right: 15px !important;
+    margin-right: auto !important;
+    margin-left: 0 !important;
+  }
+  .s-no td {
+    font-size: 7px !important;
+    padding: 6px;
+  }
+  .table th {
+    font-size: 7px !important;
+  }
+  .coin-icon img {
+    width: 15px !important;
+    height: 15px !important;
+  }
+  .buy-btn {
+    width: 36px;
+    font-size: 8px !important;
+  }
+  .signUp-form {
+    width: 394px !important;
+  }
+  .signup-form-group1 {
+    width: 154px !important;
+  }
+  .signup-form-group1 img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .signup-form-group1 h2 {
+    font-size: 18px !important;
+  }
+  .signUp-form-2 {
+    width: 270px !important;
+  }
+  .signUp-form .form-group-5 {
+    margin-top: 20px;
+    padding-right: 36px;
+  }
+  .HomeDash-bg {
+    background: linear-gradient(to left, #6441a5, #2a0845);
+    height: 2000px !important;
+    overflow-x: hidden;
+  }
+  .home-portfolio {
+    flex-direction: column !important;
+  }
+  .hp-div-2 {
+    margin-left: -1px !important;
+  }
+  .yp-table {
+    width: 100% !important;
+  }
+  .hp-div-2 {
+    margin-top: 86px !important;
+    width: 85% !important;
+  }
+  .pie-div {
+    margin-top: 40px;
+    box-shadow: 2px 6px 24px 4px #1b171a8f;
+    background-color: white;
+    border-radius: 14px;
+    width: 355px;
+  }
+  .nav-items {
+    width: 200px !important;
+  }
 }
 
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@media (max-width: 375px) {
+  .home-nav .nav-link {
+    font-size: 14px;
+  }
+  .header-txt-1 h1 {
+    font-size: 40px !important;
+  }
+  .header-txt-2 h1 {
+    font-size: 18px !important;
+  }
+  .header-para p {
+    font-size: 11px !important;
+    text-align: center !important;
+    line-height: 20px !important;
+  }
+  .table-container {
+    margin-top: -76px !important;
+  }
+  .th-name {
+    font-size: 11px !important;
+    padding: 5px !important;
+  }
+  .coin-icon h5 {
+    font-size: 11px !important;
+    margin-top: 16px !important;
+  }
+  .td-white {
+    font-size: 9px;
+  }
+  .green {
+    font-size: 9px;
+  }
+  .spark-chart {
+    width: 37px !important;
+    height: 8px !important;
+  }
+  .coin-icon img {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .buy-btn {
+    padding: 0px 8px !important;
+    font-size: 9px !important;
+  }
+
+  .form-inline input.header-search-bar {
+    width: 189px !important;
+  }
+  .search-btn {
+    padding: 11px !important;
+  }
+  .Crypto-overview-heading h1 {
+    line-height: 1.3;
+    font-size: 18px !important;
+  }
+  .Crypto-overview-para p {
+    font-size: 7px;
+  }
+  .co-left-items {
+    display: inline !important;
+  }
+  .co-left-heading {
+    margin-top: 40px;
+  }
+  .co-left-item-heading {
+    font-size: 9px !important;
+    line-height: 23px !important;
+  }
+  .co-left-item-para {
+    width: 91%;
+  }
+  .Crypto-overview-Right img {
+    width: 481px !important;
+    margin-top: -120px !important;
+    margin-left: -137px !important;
+  }
+  .acc-overview-section {
+    height: 235px !important;
+  }
+  .acc-overview-right img {
+    margin-left: 59px !important;
+  }
+  .acc-overview-content h1 {
+    font-size: 12px;
+  }
+  .ps-div-1 h2 {
+    font-size: 20px !important;
+  }
+  .ps-div-1 p {
+    font-size: 11px !important;
+  }
+  .ps-div-2 img {
+    width: 37px !important;
+    height: 37px !important;
+    margin-left: 32px;
+  }
+  .cr-txt span {
+    font-size: 11px;
+  }
+  .procedureSection {
+    height: 166px;
+  }
+  .trade-overview-content h1 {
+    font-size: 12px;
+  }
+  .trade-overview-right img {
+    width: 62%;
+    margin-left: 65px !important;
+  }
+  .footer-details p {
+    color: white;
+    font-size: 11px;
+  }
+  .copyright-span span {
+    font-size: 12px !important;
+  }
+  .signIn-form {
+    width: 350px !important;
+  }
+  .form-group1 {
+    height: 501px !important;
+
+    padding: 0 20px !important;
+  }
+  .form-group1 img {
+    margin-top: 60px !important;
+    width: 79px !important;
+    height: 150px !important;
+  }
+  .form-group1 h2 {
+    line-height: 0px !important;
+    font-size: 20px !important;
+  }
+  .signIn-form-2 {
+    width: 267px !important;
+  }
+  .form-group-2 {
+    margin-top: 35px !important;
+    width: 238px !important;
+    padding: 0 18px !important;
+  }
+  .form-group-3 {
+    margin-top: 40px !important;
+    width: 200px !important;
+  }
+  .form-group-5 {
+    width: 238px !important;
+  }
+  .form-check {
+    margin-top: 35px !important;
+    width: 204px !important;
+  }
+  .signin-btn {
+    margin-left: -50px !important;
+  }
+  label {
+    color: #e047db !important;
+    font-size: 7px !important;
+  }
+  .price-table-container {
+    padding-right: 15px !important;
+    margin-right: auto !important;
+    margin-left: 0 !important;
+  }
+  .s-no td {
+    font-size: 7px !important;
+    padding: 6px;
+  }
+  .table th {
+    font-size: 7px !important;
+  }
+  .coin-icon img {
+    width: 15px !important;
+    height: 15px !important;
+  }
+  .buy-btn {
+    width: 36px;
+    font-size: 8px !important;
+  }
+  .signUp-form {
+    width: 343px !important;
+  }
+  .signup-form-group1 {
+    width: 124px !important;
+  }
+  .signup-form-group1 img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .signup-form-group1 h2 {
+    font-size: 18px !important;
+  }
+  .signUp-form-2 {
+    width: 100px !important;
+  }
+  .signup-form-group-0,
+  .signup-form-group-1,
+  .signup-form-group-2,
+  .signup-form-group-3,
+  .signup-form-group-4 {
+    margin-top: 40px;
+    width: 300px;
+    margin-left: 110px;
+    padding: 0 71px !important;
+  }
+  .signUp-form .form-group-5 {
+    margin-top: 20px;
+    margin-left: 100px !important;
+    padding-right: 0px !important;
+  }
+  .HomeDash-bg {
+    background: linear-gradient(to left, #6441a5, #2a0845);
+    height: 2000px !important;
+    overflow-x: hidden;
+  }
+  .home-portfolio {
+    flex-direction: column !important;
+  }
+  .hp-div-2 {
+    margin-left: -1px !important;
+  }
+  .yp-table {
+    width: 312px !important;
+  }
+  .yp-txt h2 {
+    font-size: 36px !important;
+  }
+  .hp-div-2 {
+    margin-top: 86px !important;
+    width: 98% !important;
+  }
+  .total-balance-div h2 {
+    color: #ef5e5e;
+    font-size: 16px !important;
+  }
+  .pie-div {
+    margin-top: 40px;
+    box-shadow: 2px 6px 24px 4px #1b171a8f;
+    background-color: white;
+    border-radius: 14px;
+    width: 355px;
+  }
+  .nav-items {
+    width: 200px !important;
+  }
+  .price-table {
+    margin-left: -20px;
+  }
+  .coin-text {
+    margin-bottom: 32px;
+    text-align: center;
+    margin-top: 36px;
+    font-size: 30px;
+  }
+  .coin-input {
+    padding-left: 16px;
+    width: 237px;
+    height: 45px;
+  }
+  .prt-balance {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+  .prt-transaction {
+    width: 100% !important;
+  }
+  .prt-main {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .assets-table {
+    margin-left: 8px;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
-
+.assets-heading h2 {
+  color: white;
+  font-size: 36px;}
+}

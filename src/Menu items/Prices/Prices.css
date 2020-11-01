@@ -1,11 +1,5 @@
 .price-bg{
-    background: linear-gradient(
-        to left,
-        #6441a5,
-        #2a0845
-      ); 
       height: 1435px;
-    width: 100%;
 }
 
 .price-bg .coin-search{

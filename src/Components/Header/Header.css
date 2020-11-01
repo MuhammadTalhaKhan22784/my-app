@@ -5,7 +5,7 @@
 }
 
 .header-bg {
-  background: -webkit-linear-gradient(
+  /* background: -webkit-linear-gradient(
     to left,
     #6441a5,
     #2a0845
@@ -14,7 +14,7 @@
     to left,
     #6441a5,
     #2a0845
-  ); 
+  );  */
   height: 600px;
 }
 /* .navbar-brand{

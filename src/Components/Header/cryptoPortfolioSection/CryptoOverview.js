@@ -1,6 +1,6 @@
 import React from 'react'
 import './CryptoOverview.css'
-import DashboardImg from '../../../Images/Dashboard-img.jpg'
+import DashboardImg from '../../../Images/Dashboard-img.png'
 import ManagPortfolio from '../../../Images/manage-portfolio-icon.png'
 import ReccuringBuys from '../../../Images/reccuiring-icon.png'
 import VaultProtection from '../../../Images/vault-protection-icon.png'
