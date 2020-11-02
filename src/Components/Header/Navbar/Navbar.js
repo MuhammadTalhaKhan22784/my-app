@@ -59,10 +59,13 @@ const Navbar = ({bgColor}) => {
 
                 
                 <select className="themes" onChange={handleColorChange}>
-                    <option value="purple">Purple</option>
+                   
+                    <option value="purple">Select Themes</option>
                     <option value="red">Red</option>
                     <option value="blue">Blue</option>
-                    <option value="lightPurple">Light Purple</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="orange">Orange</option>
+
                     
                 </select>
             </nav>

@@ -59,12 +59,16 @@ ul {
 .appColor.blue{
   background-color: #2a2a8cfc;
 }
-.appColor.lightPurple{
-  background-color: #63336f;
+.appColor.yellow{
+  background-color: #8e966b;
+}
+.appColor.orange{
+  background-color: #d39f2e;
 }
 
 .appColor.red .header-txt-1 h1 {
   color:white;
 }
+
 
 

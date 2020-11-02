@@ -7,7 +7,7 @@ const AccountOverview = () => {
             <div className="acc-overview-section ">
                 <div className="acc-overview-left ">
                     <div className="acc-overview-content" data-aos="fade-right" data-aos-delay="80" data-aos-duration="3000">
-                        <h1>Manage Your Account Become Your Own <br></br> Local Bank And Open<br></br> A Bitcoin Account</h1>
+                        <h1>Manage Your Account Become Your Own <br></br> Local Bank And Open<br></br> An Crypto Account</h1>
                     </div>
                 </div>
 

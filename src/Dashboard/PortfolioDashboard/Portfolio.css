@@ -73,8 +73,9 @@ strong{
 .send-body-2,
 .send-body-3,
 label {
-  color: #e047db !important;
+  color:#f75e3c !important;
   font-size: 21px;
+  margin-bottom: 16px;
 }
 .send-body-1 label {
   color: black;

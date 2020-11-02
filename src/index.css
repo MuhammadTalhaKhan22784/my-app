@@ -12,6 +12,19 @@ body {
   position: absolute;
   margin-top: 10px;
 }
+
+@media (max-width: 1024px) {
+  .navbar-brand-home-dash {
+    margin-top: -58px !important;
+  }
+  .user-menu {
+    margin-left: 635px !important;
+    top: -42px;
+  }
+  .hp-div-2-txt {
+    width: 422px !important;
+  }
+}
 @media (max-width: 768px) {
   body {
     overflow-x: hidden !important;
@@ -351,12 +364,12 @@ body {
     font-size: 11px !important;
   }
   .ps-div-2 img {
-    width: 57px;
-    height: 57px;
-    margin-left: 25px;
+    width: 57px !important;
+    height: 57px !important;
+    margin-left: 25px !important;
   }
   .cr-txt span {
-    font-size: 11px;
+    font-size: 11px !important;
   }
   .procedureSection {
     height: 166px;
@@ -379,8 +392,7 @@ body {
     width: 350px !important;
   }
   .form-group1 {
-    height: 501px !important;
-
+    height: 503px !important;
     padding: 0 20px !important;
   }
   .form-group1 img {
@@ -486,6 +498,80 @@ body {
   .nav-items {
     width: 200px !important;
   }
+  .send-input {
+    width: 306px !important;
+    height: 84px !important;
+    padding-left: 100px;
+    font-size: 26px !important;
+  }
+  .prt-main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .prt-balance {
+    margin-bottom: 29px;
+  }
+  .prt-transaction {
+    width: 70% !important;
+  }
+  .recieve-body-3 {
+    display: flex;
+    margin-left: 0px !important;
+  }
+  .modal-content {
+    width: 84%;
+    margin: 0 auto;
+  }
+  .modal-body p {
+    margin-top: 17px;
+    width: 260px !important;
+    color: white;
+  }
+  .send-body-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .send-body-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .send-body-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .send-body-2 input {
+    width: 250px;
+    margin-left: 2px !important;
+  }
+  .send-body-3 {
+    display: flex;
+    margin-left: 0px !important;
+  }
+  .send-body-3 select {
+    border-radius: 5px;
+    margin-left: 0px;
+    font-size: 16px;
+  }
+  .send-body-3 select {
+    border-radius: 5px;
+    margin-left: 0px;
+    font-size: 16px;
+    width: 254px;
+    height: 36px;
+  }
+
+  .send-body-1,
+  .send-body-2,
+  .send-body-3,
+  label {
+    color: #f75e3c !important;
+    font-size: 16px !important;
+    margin-bottom: 11px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -585,7 +671,7 @@ body {
     margin-left: 32px;
   }
   .cr-txt span {
-    font-size: 11px;
+    font-size: 8px !important;
   }
   .procedureSection {
     height: 166px;
@@ -608,7 +694,7 @@ body {
     width: 350px !important;
   }
   .form-group1 {
-    height: 501px !important;
+    height: 503px !important;
 
     padding: 0 20px !important;
   }
@@ -698,6 +784,9 @@ body {
     margin-left: 100px !important;
     padding-right: 0px !important;
   }
+  .getStarted-Section-bg { 
+    overflow-x: hidden !important;
+}
   .HomeDash-bg {
     background: linear-gradient(to left, #6441a5, #2a0845);
     height: 2000px !important;
@@ -760,8 +849,135 @@ body {
   }
   .assets-table {
     margin-left: 8px;
+  }
+  .assets-heading h2 {
+    color: white;
+    font-size: 36px;
+  }
+  .send-input {
+    width: 275px !important;
+  }
+  .send-body-1,.send-body-2,.send-body-3, label{
+    font-size: 14px !important;
+  }
 }
-.assets-heading h2 {
-  color: white;
-  font-size: 36px;}
+
+@media (max-width: 320px) {
+  .header-para p {
+    font-size: 8px !important;
+  }
+  .form-inline input.header-search-bar {
+    width: 161px !important;
+    padding: 20px 27px;
+  }
+  .search-btn {
+    font-size: 10px;
+  }
+  .table .asset-table {
+    width: 400px !important;
+  }
+  .coin-icon h5 {
+    font-size: 7px !important;
+    margin-top: 16px !important;
+  }
+  .spark-chart {
+    width: 23px !important;
+    height: 8px !important;
+  }
+  .red {
+    font-size: 9px !important;
+  }
+  .coin-icon {
+    padding: 9px;
+  }
+  .Crypto-overview-heading h1 {
+    line-height: 1.3;
+    font-size: 14px !important;
+  }
+  .Crypto-overview-para p {
+    font-size: 6px;
+  }
+  .co-left-item-heading {
+    font-size: 7px !important;
+    line-height: 18px !important;
+  }
+  .co-left-item-para {
+    width: 195px;
+  }
+  .Crypto-overview-Right img {
+    width: 436px !important;
+    margin-top: -120px !important;
+    margin-left: -137px !important;
+  }
+  .acc-overview-right img {
+    margin-left: 41px !important;
+  }
+  .cr-txt span {
+    color: white;
+    margin-left: 11px;
+    font-size: 8px;
+  }
+  .ps-div-2 img {
+    margin-left: 33px;
+  }
+  .trade-overview-right img {
+    width: 62%;
+    margin-left: 50px !important;
+  }
+  .s-no td {
+    font-size: 7px !important;
+    padding: 2px;
+  }
+  .price-table {
+    margin-left: -7px;
+  }
+  .signin-Section-bg {
+    overflow-x: hidden !important;
+  }
+  .signIn-form {
+    width: 298px !important;
+  }
+  .form-control {
+    display: block;
+    width: 72% !important;
+  }
+  .signin-btn {
+    padding: 10px 24px;
+  }
+  .form-group1 {
+    height: 502px !important;
+  }
+  .getStarted-Section-bg {
+    overflow-x: hidden !important; 
+  }
+  .signUp-form {
+    width: 298px !important;
+  }
+  .signup-form-group1 h2 {
+    font-size: 12px !important;
+  }
+  .signup-btn {
+    padding: 14px 18px !important;
+  }
+  .signUp-form .form-group-5 {
+    margin-top: 20px;
+    margin-left: 64px !important;
+    padding-right: 0px !important;
+  }
+  .create-account-text {
+    font-size: 25px !important;
+  }
+  .send-input {
+    width: 226px !important;
+  }
+  .send-body-1,.send-body-2, .send-body-3, label {
+    font-size: 14px !important;
+  }
+  .send-body-3 select {
+    width: 163px !important;
+}
+.modal-body p {
+  margin-top: 17px;
+  width: 198px !important;
+}
 }

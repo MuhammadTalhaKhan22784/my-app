@@ -12,7 +12,7 @@ const PortfolioOverview = () => {
                 </div>
                 <div className="prt-overview-left ">
                     <div className="prt-overview-content" data-aos="fade-right" data-aos-delay="90" data-aos-duration="2000">
-                        <h1>Manage Your Account Become Your Own <br></br> Local Bank And Open<br></br> A Bitcoin Account</h1>
+                        <h1>You can trade, see  <br></br> Buy our products and<br></br>Check Global Prices of Coins</h1>
                     </div>
                 </div>
 

@@ -7,7 +7,7 @@ const TradeOverview = () => {
         <div className="trade-overview-section ">
             <div className="trade-overview-left ">
                 <div className="trade-overview-content" data-aos="fade-right" data-aos-delay="80" data-aos-duration="3000">
-                    <h1>Manage Your Account Become Your Own <br></br> Local Bank And Open<br></br> A Bitcoin Account</h1>
+                <h1>You can trade here <br></br> Buy our products and<br></br>Check Global Prices of Coins</h1>
                 </div>
             </div>
 
