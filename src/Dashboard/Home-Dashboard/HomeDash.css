@@ -1,5 +1,6 @@
 .HomeDash-bg {
-  background: linear-gradient(to left, #6441a5, #2a0845);
+  /* background: linear-gradient(to left, #6441a5, #2a0845); */
+  background-color: #4E2B81;
   height: 1500px;
 }
 

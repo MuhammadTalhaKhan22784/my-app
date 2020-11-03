@@ -50,7 +50,9 @@ ul {
 
 
 .appColor.purple {
-  background: linear-gradient( to left, #6441a5, #2a0845 ) !important;
+  /* background: linear-gradient( to left, #6441a5, #2a0845 ) !important; */
+
+  background-color: #4E2B81;
 }
 .appColor.red {
   background: linear-gradient( to left, #ac0e58, #bb1414 ) !important;
@@ -65,9 +67,18 @@ ul {
 .appColor.orange{
   background-color: #d39f2e;
 }
+.appColor.black{
+  background-color: black;
+}
+.appColor.White{
+  background-color: white;
+}
 
 .appColor.red .header-txt-1 h1 {
   color:white;
+}
+.appColor.red .co-left-item-heading{
+  color: #c6b8d2;
 }
 
 

@@ -70,6 +70,7 @@ const HomeDash = () => {
                 console.error('efg :', error)
             })
     }, []);
+   
     return (
 
         <>
@@ -85,7 +86,7 @@ const HomeDash = () => {
                             <div className="watchlist-txt"><h2>Watchlist</h2></div>
                             <div className="watchlist-edit-items">
                                 <div><p type="button">Edit</p></div>
-                                <ViewModuleIcon className="viewIcon" type="button" />
+                                <ViewModuleIcon className="viewIcon" type="button" /> 
                                 <ViewHeadlineIcon className="viewListIcon" type="button" />
                             </div>
                         </div>

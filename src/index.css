@@ -273,6 +273,17 @@ body {
     left: -451px !important;
     top: -314px !important;
   }
+  .news-contents {
+    margin-top: 80px !important;
+    width: 44% !important;
+  }
+  .news-categories span {
+    color: #de7d7d;
+  }
+  .news-title h2 {
+  }
+  .news-body p {
+  }
 }
 
 @media (max-width: 425px) {
@@ -311,11 +322,11 @@ body {
   }
   .header-para p {
     color: rgb(255, 255, 255);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0.5px;
-    width: 347px;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 23px !important;
+    letter-spacing: 0.5px !important;
+    width: 347px !important;
     font-family: "Roboto", sans-serif;
   }
   .form-inline input.header-search-bar {
@@ -572,6 +583,21 @@ body {
     font-size: 16px !important;
     margin-bottom: 11px;
   }
+  .news-contents {
+    margin-top: 80px !important;
+    width: 70% !important;
+    margin: 0 auto !important;
+    margin-bottom: 50px !important;
+  }
+  .news-categories span {
+    font-size: 14px !important;
+  }
+  .news-title h2 {
+    font-size: 18px !important;
+  }
+  .news-body p {
+    font-size: 12px !important;
+  }
 }
 
 @media (max-width: 375px) {
@@ -620,7 +646,8 @@ body {
   }
 
   .form-inline input.header-search-bar {
-    width: 189px !important;
+    width: 172px !important;
+    padding: 23px 11px !important;
   }
   .search-btn {
     padding: 11px !important;
@@ -784,9 +811,9 @@ body {
     margin-left: 100px !important;
     padding-right: 0px !important;
   }
-  .getStarted-Section-bg { 
+  .getStarted-Section-bg {
     overflow-x: hidden !important;
-}
+  }
   .HomeDash-bg {
     background: linear-gradient(to left, #6441a5, #2a0845);
     height: 2000px !important;
@@ -857,14 +884,177 @@ body {
   .send-input {
     width: 275px !important;
   }
-  .send-body-1,.send-body-2,.send-body-3, label{
+  .send-body-1,
+  .send-body-2,
+  .send-body-3,
+  label {
     font-size: 14px !important;
+  }
+  .news-contents {
+    margin-top: 80px !important;
+    width: 70% !important;
+    margin: 0 auto !important;
+    margin-bottom: 20px !important;
+  }
+  .news-categories span {
+    font-size: 12px !important;
+  }
+  .news-title h2 {
+    font-size: 16px !important;
+  }
+  .news-body p {
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .header-para p {
+    font-size: 8px !important;
+  }
+  .form-inline input.header-search-bar {
+    width: 157px !important;
+    font-size: 12px;
+    padding: 22px 17px !important;
+  }
+  .search-btn {
+    padding: 9px !important;
+    font-size: 14px !important;
+  }
+  .asset-table{
+    width:100%;
+  }
+  .table .asset-table {
+    width: 400px !important;
+  }
+  .coin-icon img {
+    margin-top: 14px !important;
+  }
+  .coin-icon h5 {
+    font-size: 7px !important;
+    margin-top: 22px !important;
+  }
+  .spark-chart {
+    width: 23px !important;
+    height: 8px !important;
+  }
+  .red {
+    font-size: 9px !important;
+  }
+  .coin-icon {
+    padding: 9px !important;
+  }
+  .Crypto-overview-features {
+    margin-top: 47px !important;
+}
+  .Crypto-overview-heading h1 {
+    line-height: 1.3;
+    font-size: 14px !important;
+  }
+  .Crypto-overview-para p {
+    font-size: 6px;
+  }
+  .co-left-item-heading {
+    font-size: 7px !important;
+    line-height: 18px !important;
+  }
+  .co-left-item-para {
+    width: 195px;
+  }
+  .Crypto-overview-Right img {
+    width: 436px !important;
+    margin-top: -120px !important;
+    margin-left: -137px !important;
+  }
+  .acc-overview-right img {
+    margin-left: 41px !important;
+  }
+  .cr-txt span {
+    color: white;
+    margin-left: 11px;
+    font-size: 8px;
+  }
+  .ps-div-2 img {
+    margin-left: 33px;
+  }
+  .trade-overview-right img {
+    width: 62%;
+    margin-left: 50px !important;
+  }
+  .s-no td {
+    font-size: 7px !important;
+    padding: 2px;
+  }
+  .price-table {
+    margin-left: -7px;
+  }
+  .signin-Section-bg {
+    overflow-x: hidden !important;
+  }
+  .signIn-form {
+    width: 298px !important;
+  }
+  .form-control {
+    display: block;
+    width: 72% !important;
+  }
+  .signin-btn {
+    padding: 10px 24px;
+  }
+ 
+  .form-group1 {
+    height: 502px !important;
+  }
+  .getStarted-Section-bg {
+    overflow-x: hidden !important;
+  }
+  .signUp-form {
+    width: 298px !important;
+  }
+  .signup-form-group1 h2 {
+    font-size: 12px !important;
+  }
+  .signup-btn {
+    padding: 10px 27px !important;
+  }
+  .signUp-form .form-group-5 {
+    margin-top: 20px;
+    margin-left: 64px !important;
+    padding-right: 0px !important;
+  }
+  .create-account-text {
+    font-size: 25px !important;
+  }
+  .send-input {
+    width: 226px !important;
+  }
+  .send-body-1,
+  .send-body-2,
+  .send-body-3,
+  label {
+    font-size: 12px !important;
+  }
+  .send-body-3 select {
+    width: 163px !important;
+  }
+  .modal-body p {
+    margin-top: 17px;
+    width: 198px !important;
+  }
+  .news-title h2 {
+    font-size: 14px !important;
+  }
+  .news-categories span {
+    font-size: 10px !important;
+  }
+  .news-body p {
+    font-size: 10px !important;
   }
 }
 
 @media (max-width: 320px) {
   .header-para p {
     font-size: 8px !important;
+    width: 100% !important;
   }
   .form-inline input.header-search-bar {
     width: 161px !important;
@@ -890,6 +1080,7 @@ body {
   .coin-icon {
     padding: 9px;
   }
+
   .Crypto-overview-heading h1 {
     line-height: 1.3;
     font-size: 14px !important;
@@ -948,7 +1139,7 @@ body {
     height: 502px !important;
   }
   .getStarted-Section-bg {
-    overflow-x: hidden !important; 
+    overflow-x: hidden !important;
   }
   .signUp-form {
     width: 298px !important;
@@ -970,14 +1161,26 @@ body {
   .send-input {
     width: 226px !important;
   }
-  .send-body-1,.send-body-2, .send-body-3, label {
+  .send-body-1,
+  .send-body-2,
+  .send-body-3,
+  label {
     font-size: 14px !important;
   }
   .send-body-3 select {
     width: 163px !important;
-}
-.modal-body p {
-  margin-top: 17px;
-  width: 198px !important;
-}
+  }
+  .modal-body p {
+    margin-top: 17px;
+    width: 198px !important;
+  }
+  .news-title h2 {
+    font-size: 14px !important;
+  }
+  .news-categories span {
+    font-size: 10px !important;
+  }
+  .news-body p {
+    font-size: 10px !important;
+  }
 }

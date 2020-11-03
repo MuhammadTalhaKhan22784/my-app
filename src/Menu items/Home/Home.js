@@ -9,6 +9,7 @@ import AccountOverview from '../../Components/Header/CryptoAccountSection/Accoun
 import PortfolioOverview from '../../Components/Header/PortfolioOverviewSection/PortfolioOverview';
 import TradeOverview from '../../Components/Header/TradeOverviesSection/TradeOverview';
 import AccountProcedure from '../../Components/Header/GetStartdedFewMin/AccountProcedure';
+import NewsFeed from '../../Components/Header/NewsFeed/NewsFeed';
 const Home = ({bgColor}) => {
 
     const [coins, setCoins] = useState([]);
@@ -20,7 +21,6 @@ const Home = ({bgColor}) => {
             )
             .then(res => {
                 setCoins(res.data);
-                console.log(res.data);
             })
             .catch(error => console.log(error));
     }, []);
@@ -35,6 +35,7 @@ const Home = ({bgColor}) => {
                 <AccountOverview/>
                 <AccountProcedure/>
                 <TradeOverview/>
+                <NewsFeed/>
                 <Footer />
 
             </div>

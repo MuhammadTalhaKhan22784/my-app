@@ -1,6 +1,8 @@
 .rickAdvisory-bg{
     width: 100%;
-    height: 1577px;}
+    height: 1577px;
+    overflow-x: hidden;
+  }
 
 .rickAdvisory-bg .copyright-span{
     margin-top: 180px;
@@ -24,7 +26,7 @@
     margin: 0 auto;
   }
   .rickAdvisory-details p {
-      text-align: center;
+    text-align: justify
      
   }
   .rickAdvisory-details p {

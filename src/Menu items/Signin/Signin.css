@@ -108,10 +108,11 @@
   width: 300px;
 }
 
-.form-group-2, .form-group-2, label{
-    color: white;
-    font-size: 18px;
-    
+.form-group-2,
+.form-group-2,
+label {
+  color: white;
+  font-size: 18px;
 }
 
 .form-check-label span {
@@ -128,10 +129,13 @@
   justify-content: center;
 }
 
-.signin-btn{
-    box-shadow: 2px 6px 24px 4px #1b171a8f;
-    background-color:#05B169;
-    border-radius: 14px;
-    padding: 1rem 3rem;
-    border: none;
+.signin-btn {
+  box-shadow: 2px 5px 6px 0px #2e332e;
+  background-color: #05b169;
+  border-radius: 14px;
+  padding: 1rem 3rem;
+  border: none;
+}
+.signin-btn:focus {
+  outline: none;
 }
