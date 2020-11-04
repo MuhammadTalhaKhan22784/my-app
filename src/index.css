@@ -1025,6 +1025,13 @@ body {
   .table .asset-table {
     width: 400px !important;
   }
+  .table-container .coin-icon img{
+    margin-top: 8px !important;
+  }
+  .table-container .coin-icon h5 {
+    font-size: 10px !important;
+    margin-top: 19px !important;
+}
   .coin-icon img {
     margin-top: 14px !important;
   }
@@ -1065,8 +1072,13 @@ body {
     margin-left: -137px !important;
   }
   .acc-overview-right img {
-    margin-left: 41px !important;
+    margin-left: 8px !important;
+    width: 90% !important;
   }
+  .acc-overview-content h1 {
+    line-height: 34px !important;
+  }
+
   .cr-txt span {
     color: white;
     margin-left: 11px;
@@ -1076,8 +1088,11 @@ body {
     margin-left: 33px;
   }
   .trade-overview-right img {
-    width: 62%;
-    margin-left: 50px !important;
+    margin-left: 8px !important;
+    width: 90% !important;
+  }
+  .trade-overview-right h1 {
+    line-height: 35px !important;
   }
   .s-no td {
     font-size: 7px !important;
