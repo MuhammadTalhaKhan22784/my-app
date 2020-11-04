@@ -26,7 +26,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-width: 780px) {
   body {
     overflow-x: hidden !important;
     width: 100vw !important;
@@ -207,10 +207,12 @@ body {
   .getStarted-Section-bg {
     height: 1300px;
   }
-  .price-table-container {
-    padding-right: 15px !important;
-    margin-right: auto !important;
-    margin-left: 0 !important;
+  .HomeDash-bg {
+    background-color: #4e2b81;
+    height: 2000px !important;
+  }
+  .HomeDash-bg .price-table {
+    margin-left: -25px !important;
   }
   .assets-table {
     margin-left: 32px;
@@ -238,8 +240,7 @@ body {
     padding-top: 119px !important;
     padding-left: 34px !important;
   }
-  .homeDash-navbar .navbar-toggler {
-  }
+
   .home-dash-nav {
     margin-top: 20px;
     flex-direction: column !important;
@@ -281,9 +282,12 @@ body {
   .news-categories span {
     color: #de7d7d;
   }
-  .news-title h2 {
+ 
+  .coin-icon img {
+    margin-top: 13px !important;
   }
-  .news-body p {
+  .coin-icon h5 {
+    margin-top: 12px !important;
   }
 }
 
@@ -378,7 +382,7 @@ body {
 }
  */
 
-@media (max-width: 425px) {
+@media (max-width: 425px), (max-width: 430px) {
   .home-nav .nav-link {
     font-size: 14px;
   }
@@ -857,6 +861,9 @@ body {
     margin-right: auto !important;
     margin-left: 0 !important;
   }
+  .price-bg .price-table {
+    margin-left: 0px !important;
+  }
   .s-no td {
     font-size: 7px !important;
     padding: 6px;
@@ -1090,7 +1097,7 @@ body {
     width: 72% !important;
   }
   .signin-btn {
-    padding: 10px 24px;
+    padding: 10px 24px !important;
   }
 
   .form-group1 {
@@ -1106,7 +1113,7 @@ body {
     font-size: 12px !important;
   }
   .signup-btn {
-    padding: 10px 27px !important;
+    padding: 10px 24px !important;
   }
   .signUp-form .form-group-5 {
     margin-top: 20px;
@@ -1141,9 +1148,23 @@ body {
   .news-body p {
     font-size: 10px !important;
   }
+  .hp-div-2-txt {
+    width: 295px !important;
+  }
+  .HomeDash-bg .price-table {
+    margin-left: -10px !important;
+  }
+  .coin-icon img {
+    margin-top: -11px !important;
+    margin-top: 3px !important;
+  }
+  .coin-icon h5 {
+    font-size: 7px !important;
+    margin-top: 11px !important;
+  }
 }
 
-@media (max-width: 353px) {
+@media (max-width: 353px), (max-width: 355px) {
   .yp-txt h2 {
     font-size: 30px !important;
   }
@@ -1175,36 +1196,35 @@ body {
   .coin-icon h5 {
     font-size: 7px !important;
     margin-top: 11px !important;
-}
-.buy-btn {
-  width: 25px !important;
-  line-height: 7px;
-  height: 18px !important;
-  padding: 0px 1px !important;
-  font-size: 14px !important;
-  font-size: 7px !important;
-}
-.assets-heading h2 {
-  font-size: 30px !important;
-}
-.assets-table {
-  margin-left: 15px;
-}
-.price-table {
-  margin-left: 1px !important;
-}
-.signin-btn{
-  padding: 10px 27px !important;
-
-}
-.coin-icon h5 {
-  font-size: 10px !important;
-  margin-top: 24px !important;
-  line-height: 0px !important;
-}
-.coin-icon img {
-  margin-top: 16px !important;
-}
+  }
+  .buy-btn {
+    width: 25px !important;
+    line-height: 7px;
+    height: 18px !important;
+    padding: 0px 1px !important;
+    font-size: 14px !important;
+    font-size: 7px !important;
+  }
+  .assets-heading h2 {
+    font-size: 30px !important;
+  }
+  .assets-table {
+    margin-left: 15px;
+  }
+  .price-table {
+    margin-left: 1px !important;
+  }
+  .signin-btn {
+    padding: 10px 27px !important;
+  }
+  .coin-icon h5 {
+    font-size: 10px !important;
+    margin-top: 24px !important;
+    line-height: 0px !important;
+  }
+  .coin-icon img {
+    margin-top: 16px !important;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1239,7 +1259,7 @@ body {
   }
   .coin-icon h5 {
     font-size: 7px !important;
-    margin-top: 16px !important;
+    margin-top: 20px !important;
   }
   .spark-chart {
     width: 23px !important;
@@ -1371,8 +1391,7 @@ body {
     padding: 12px !important;
   }
 }
-
-@media (max-width: 283px) {
+@media (max-width: 286px), (max-width: 287px) {
   .asset-table.table td,
   .table th {
     border: none !important;
@@ -1589,5 +1608,236 @@ body {
   }
   .user-item {
     left: -24px !important;
+  }
+}
+
+@media (max-width: 283px) {
+  .asset-table.table td,
+  .table th {
+    border: none !important;
+    line-height: 44px;
+    padding: 7px !important;
+    font-size: 9px !important;
+  }
+  .buy-btn {
+    width: 27px !important;
+    height: 18px !important;
+    padding: 0px 2px !important;
+    font-size: 14px !important;
+    font-size: 9px !important;
+  }
+  .Crypto-overview {
+    margin-top: 31px !important;
+  }
+  .Crypto-overview-heading h1 {
+    line-height: 1.3;
+    font-size: 12px !important;
+  }
+  .Crypto-overview-para p {
+    font-size: 7px !important;
+    line-height: 17px !important;
+    text-align: center !important;
+    width: 100% !important;
+    padding: 0 25px !important;
+  }
+  .Crypto-overview-features {
+    margin-top: 79px !important;
+  }
+
+  .co-left-sub-items img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .co-left-heading {
+    width: 88% !important;
+    margin-top: 33px !important;
+  }
+  .co-left-item-para {
+    width: 166px !important;
+    padding-left: 0px !important;
+  }
+  .Crypto-overview-Right img {
+    width: 359px !important;
+    height: 536px;
+    margin-top: -120px !important;
+    margin-left: -112px !important;
+  }
+  .acc-overview-section {
+    margin-top: -62px !important;
+  }
+  .acc-overview-content h1 {
+    width: 89% !important;
+    font-size: 10px;
+    line-height: 28px !important;
+    margin-left: 14px !important;
+  }
+  .acc-overview-right img {
+    width: 113px !important;
+    margin-left: 17px !important;
+    height: 107px !important;
+  }
+  .acc-overview-section {
+    height: 300px !important;
+  }
+  .cr-txt span {
+    color: white !important;
+    margin-left: 17px !important;
+    font-size: 7px !important;
+  }
+  .trade-overview-content h1 {
+    width: 86 !important;
+    font-size: 9px !important;
+    line-height: 28px !important;
+    margin-left: 14px !important;
+  }
+  .trade-overview-right img {
+    width: 113px !important;
+    margin-left: 17px !important;
+    height: 107px !important;
+  }
+  .trade-overview-section {
+    height: 300px !important;
+  }
+  .signIn-form {
+    width: 248px !important;
+  }
+  .form-group1 img {
+    margin-top: 60px !important;
+    width: 63px !important;
+    height: 130px !important;
+  }
+  .form-control {
+    display: block !important;
+    width: 56% !important;
+    font-size: 10px;
+  }
+
+  .form-check-label {
+    margin-bottom: 0;
+    font-size: 10px !important;
+    width: 100px;
+  }
+  .signin-btn {
+    margin-left: -98px !important;
+  }
+  .form-group1 h2 {
+    font-size: 18px !important;
+  }
+  .signUp-form {
+    width: 254px !important;
+  }
+  .signup-form-group1 {
+    width: 99px !important;
+  }
+  .signUp-form.form-control {
+    display: block !important;
+    width: 71% !important;
+    font-size: 10px;
+  }
+  .homeDash-navbar {
+    padding-top: 119px !important;
+    padding-left: 0px !important;
+  }
+  .yp-txt h2 {
+    font-size: 25px !important;
+  }
+  .hp-div-1 {
+    width: 98% !important;
+  }
+  .yp-table {
+    width: 219px !important;
+    font-size: 8px !important;
+  }
+
+  .total-balance-div {
+    width: 178px !important;
+  }
+  .total-balance-div h2 {
+    font-size: 9px !important;
+    padding: 15px !important;
+  }
+  .hp-div-2-txt {
+    width: 220px !important;
+  }
+  .hp-div-2-txt h2 {
+    font-size: 18px !important;
+    padding: 5px;
+  }
+  .coin-text {
+    font-size: 22px !important;
+  }
+  .coin-input {
+    padding-left: 16px !important;
+    width: 187px !important;
+    height: 43px !important;
+  }
+  .pie-div {
+    width: 99% !important;
+    height: 317px !important;
+  }
+  .recharts-layer {
+    width: 30% !important;
+  }
+  .price-bg .price-table {
+    margin-left: -5px !important;
+  }
+  .table-container {
+    margin-top: -184px !important;
+  }
+  .asset-table.table td,
+  .table th {
+    border: none !important;
+    line-height: 44px;
+    padding: 2px !important;
+    font-size: 6px !important;
+  }
+  .buy-btn {
+    width: 27px !important;
+    line-height: 3px;
+    height: 18px !important;
+    padding: 0px 2px !important;
+    font-size: 14px !important;
+    font-size: 7px !important;
+  }
+  .assets-heading h2 {
+    font-size: 25px !important;
+  }
+  .send-input {
+    width: 193px !important;
+    height: 79px !important;
+    padding-left: 33px !important;
+    font-size: 15px !important;
+  }
+  .modal-body p {
+    margin-top: 13px !important;
+    width: 198px !important;
+    font-size: 11px !important;
+  }
+  .send-body-1,
+  .send-body-2,
+  .send-body-3,
+  label {
+    font-size: 10px !important;
+  }
+  .send-body-3 select {
+    font-size: 10px !important;
+  }
+  .send-body-3 select {
+    width: 132px !important;
+  }
+  .modal-body {
+    padding-bottom: 10px !important;
+  }
+  .recieve-body-3 select {
+    font-size: 10px !important;
+  }
+  .user-item {
+    left: -24px !important;
+  }
+  .newsfeed-heading {
+    margin-top: 44px !important;
+  }
+  .news-title h2 {
+    font-size: 12px !important;
   }
 }

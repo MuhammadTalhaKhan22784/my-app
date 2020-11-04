@@ -156,7 +156,7 @@ const HomeDash = () => {
                                     </div>
                                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                         <div className="pie-div" >
-                                        </div>
+                                        </div> 
 
                                     </div>
                                     <div className="total-balance-div">
