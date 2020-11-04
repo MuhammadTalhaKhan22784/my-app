@@ -1,9 +1,5 @@
 import React from 'react'
 import './Table.css'
-import Bitcoin from '../../../Images/bitcoinIcon.png';
-import Ethcoin from '../../../Images/ethCoinIcon.png';
-import bitcoinCashIcon from '../../../Images/bitcoinCashIcon.png';
-import liteCoinIcon from '../../../Images/liteCoinIcon.webp';
 import chart from '../../../Images/sparklineChart.png'
 
 const Table = ({ coins }) => {

@@ -4,7 +4,7 @@ import './Navbar.css'
 
 const Navbar = ({bgColor}) => {
 // function Navbar({bgColor}) {
-
+    let currentUser = localStorage.getItem('currentUser')
 
     const handleColorChange = (e)=>{
 

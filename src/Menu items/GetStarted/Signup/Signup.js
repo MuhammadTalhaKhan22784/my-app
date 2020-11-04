@@ -31,14 +31,14 @@ export default function Signup(props) {
         let { firstname, lastname, middlename, email, country, mobile, password, cPassword, referralId } = form
 
         axios.post('https://node1.pixelexchange.com/api/SignUp', {
-            firstname: "xxxx",
-            middlename: "xxxx",
-            lastname: "xxxx",
-            email: "majaruzuh@rsvhr.com",
-            country: "UK",
-            mobile: "44444",
-            password: "Hell1@o1om",
-            referralId: 250252
+            firstname: firstname,
+            middlename: middlename,
+            lastname: lastname,
+            email: email,
+            country: country,
+            mobile: mobile,
+            password: password,
+            referralId: referralId
         }, 
         {
             headers: {
@@ -48,37 +48,14 @@ export default function Signup(props) {
             }
         })
         .then(res => {
+            console.log('abc', res)
                 history.push('/homedash')
                 localStorage.setItem('currentUser', res.data)
+               
             })
                 .catch(error => console.log(error));
             
-
         }
-
-
-
-        //     axios
-        //         .post(
-        //             'https://node1.pixelexchange.com/api/SignUp', {
-        //             firstname,
-        //             lastname,
-        //             password,
-        //             country,
-        //             email,
-        //             middlename,
-        //             referralId,
-        //             mobile,
-        //             cPassword
-        //         }
-        //         )
-        //         .then(res => {
-        //             history.push('/homedash')
-        //             // localStorage.setItem('currentUser', res.data) 
-        //         })
-        //         .catch(error => console.log(error));
-        // }
-
 
         return (
             <>

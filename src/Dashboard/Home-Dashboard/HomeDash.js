@@ -36,27 +36,11 @@ import HomeDashNav from './HomeDashNav';
 
 const HomeDash = () => {
 
+    // for checking this api and end poin i write this code here
     const token = '846d3c72-761d-41ce-86cb-70204678ec31'
     useEffect(() => {
 
-        // axios.post('https://node1.pixelexchange.com/api/SignUp', {
-        //     firstname: "xxxx",
-        //     middlename: "xxxx",
-        //     lastname: "xxxx",
-        //     email: "majaruzuh@rsvhr.com",
-        //     country: "UK",
-        //     mobile: "44444",
-        //     password: "Hell1@o1om",
-        //     referralId: 250252
-        // }, {
-        //     headers: {
-        //         'Authorization': `Bearer ${token}`,
-        //         'HMAC': `96F3C7EDC46D790ECEB980D743865CCC0AB53B9969EC5A749546500FB8C048D6078D780415FEA40779A0453A6240CC5A2DE8374ED3AF9D0D89F3FC2F7CFBDA18`
-        //         , 'Access-Control-Allow-Origin': '*'
-        //     }
-        // })
-
-        axios.get('https://node1.pixelexchange.com/market/get-bid_ask-price/BTC_ETH', {
+        axios.get('https://node1.pixelexchange.com/market/get-market-summary', {
             headers: {
                 'Authorization': `Bearer ${token}`,
                 'HMAC': `96F3C7EDC46D790ECEB980D743865CCC0AB53B9969EC5A749546500FB8C048D6078D780415FEA40779A0453A6240CC5A2DE8374ED3AF9D0D89F3FC2F7CFBDA18`
@@ -64,7 +48,7 @@ const HomeDash = () => {
             }
         })
             .then((res) => {
-                console.log('abcd: ', res.data)
+                console.log('abcde: ', res.data)
             })
             .catch((error) => {
                 console.error('efg :', error)
@@ -172,7 +156,6 @@ const HomeDash = () => {
                                     </div>
                                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                         <div className="pie-div" >
-                                            <PieChart />
                                         </div>
 
                                     </div>

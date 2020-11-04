@@ -19,6 +19,7 @@
 }
 .footer-details p {
   color: white;
+  text-align: justify;
 }
 .copyright-span {
   display: flex;

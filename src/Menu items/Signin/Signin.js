@@ -10,8 +10,10 @@ const Signin = ({ bgColor }) => {
     let history = useHistory()
     
     const [form, setForm] = useState({
-        email: "techsupport@modulus.io",
-        password: "Abcd@234"
+        // email: "techsupport@modulus.io",
+        // password: "Abcd@234"
+        email: "",
+        password: ""
     })
 
     const handleChange = (e) => {
@@ -24,8 +26,8 @@ const Signin = ({ bgColor }) => {
     const handleSubmit = () => {
         let { email, password} = form
         axios.post('https://node1.pixelexchange.com/api/AuthenticateUser', {
-            email: "techsupport@modulus.io",
-            password: "Abcd@234"
+            email: email,
+            password: password
         }
         , 
         {
@@ -36,6 +38,7 @@ const Signin = ({ bgColor }) => {
             }
         })
         .then(res => {
+            console.log('qwe',res.data)
                 history.push('/homedash')
                 localStorage.setItem('currentUser', res.data)
             })
@@ -56,11 +59,11 @@ const Signin = ({ bgColor }) => {
                     <div className="signIn-form-2">
                         <div class="form-group-2">
                             <label for="exampleDropdownFormEmail2">Email</label>
-                            <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="Email" value={form.firstname} onChange={handleChange}></input>
+                            <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="Email" name="email" value={form.email} onChange={handleChange}></input>
                         </div>
                         <div class="form-group-3">
                             <label for="exampleDropdownFormPassword2">Password</label>
-                            <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password" value={form.password} onChange={handleChange}></input>
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password" name="password" value={form.password} onChange={handleChange}></input>
                         </div>
 
                         <div class="form-check">
