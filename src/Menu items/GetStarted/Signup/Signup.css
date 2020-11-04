@@ -88,3 +88,7 @@
   padding: 1rem 3rem;
   border: none;
 }
+.signup-btn:focus{
+  border: none;
+  outline: none;
+}
