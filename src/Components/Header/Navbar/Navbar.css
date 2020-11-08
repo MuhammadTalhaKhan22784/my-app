@@ -72,7 +72,7 @@ body {
 }
 .signin-link {
   color: rgb(255, 255, 255) !important;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
   font-family: "Roboto", sans-serif !important;
@@ -90,6 +90,7 @@ a:hover {
   color: white;
   margin-left: 20px;
   cursor: pointer;
+  font-size: 18px;
 }
 .themes option{
   background-color: #4C2A7D;

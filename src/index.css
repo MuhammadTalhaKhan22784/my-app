@@ -26,7 +26,10 @@ body {
   }
 }
 
-@media (max-width: 768px), (max-width: 780px) {
+@media (max-width: 768px),(max-width: 790px) {
+  html {
+    font-size: 10px !important;
+  }
   body {
     overflow-x: hidden !important;
     width: 100vw !important;
@@ -78,15 +81,13 @@ body {
     font-size: 14px !important;
     font-weight: bold;
   }
-  .coin-icon h5 {
-    color: white;
-    font-size: 14px !important;
-  }
-
   .td-white {
     color: white;
     font-size: 14px;
     line-height: 35px;
+  }
+  .Crypto-overview-item-1 {
+    margin-top: 5px !important;
   }
   .Crypto-overview-heading h1 {
     font-size: 36px !important;
@@ -110,28 +111,36 @@ body {
   }
   .co-left-sub-items img {
     width: 60px !important;
-    height: 60px;
+    height: 60px !important;
   }
   .Crypto-overview-features {
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    margin-top: 62px !important;
   }
   .Crypto-overview-Right {
     width: 86%;
   }
   .Crypto-overview-Right img {
     width: 639px !important;
-    margin: 0 !important;
+    margin-top: -56px;
+  }
+  .main-home .acc-overview-section {
+    margin-top: 30px !important;
+    height: 280px !important;
   }
   .acc-overview-content h1 {
     color: white;
     line-height: 46px !important;
-    font-size: 22px;
+    font-size: 22px !important;
   }
-
   .acc-overview-right img {
     width: 62% !important;
     margin-left: 110px !important;
+  }
+  .procedureSection {
+    margin-top: 31px !important;
+    height: 243px !important;
   }
   .ps-div-1 h2 {
     font-size: 36px !important;
@@ -141,17 +150,19 @@ body {
     font-size: 14px !important;
   }
   .ps-div-2 img {
-    margin-left: 29px;
+    margin-left: 41px !important;
   }
   .cr-txt span {
-    color: white;
-    font-size: 16px;
+    font-size: 18px !important;
   }
   .prt-overview-content h1 {
     line-height: 46px;
     font-size: 26px;
   }
-
+  .main-home .trade-overview-section {
+    margin-top: 150px;
+    height: 280px !important;
+  }
   .trade-overview-content h1 {
     line-height: 46px !important;
     font-size: 22px;
@@ -169,7 +180,7 @@ body {
   }
   .footer-details p {
     color: white;
-    font-size: 14px;
+    font-size: 15px !important;
   }
   .signIn-form {
     width: 648px !important;
@@ -282,12 +293,13 @@ body {
   .news-categories span {
     color: #de7d7d;
   }
- 
+
   .coin-icon img {
-    margin-top: 13px !important;
+    margin-top: 9px !important;
   }
   .coin-icon h5 {
-    margin-top: 12px !important;
+    margin-top: 8px !important;
+    font-size: 14px !important;
   }
 }
 
@@ -381,10 +393,67 @@ body {
   }
 }
  */
+@media (max-width: 480px),(max-width: 502px) {
+  /* select.themes {
+    top: 30px !important;
+}
+.header-txt-1 h1 {
+  font-size: 50px !important;
+}
+.header-txt-2 h1 {
+  font-size: 25px !important;
+}
+.asset-table{
+  margin-top: -70px !important;
+}
+.th-name {
+  color: #dc82cd;
+  font-size: 13px !important;
+}
+.asset-table td{
+  font-size: 10px !important;
+}
+.coin-icon h5{
+  font-size: 10px !important;
+  margin-top: 16px !important;
+}
+.coin-icon img {
+  margin-top: 12px !important;
+  width: 18px !important;
+  height: 18px !important;
+}
+.buy-btn {
+  font-size: 10px !important;
+  height: 33px !important;
+  line-height: 10px !important;
+}
+.Crypto-overview-heading h1 {
+  font-size: 22px !important;
+}
+.Crypto-overview-para p {
+  font-size: 14px !important;
+  width: 80% !important;
+  margin: 0 auto !important;
+} */
 
-@media (max-width: 425px), (max-width: 430px) {
+  .asset-table {
+    margin-top: -70px !important;
+  }
   .home-nav .nav-link {
-    font-size: 14px;
+    font-size: 14px !important;
+  }
+  select.themes {
+    margin-left: -50px !important;
+    font-size: 14px !important;
+  }
+  .signin-link {
+    font-size: 14px !important;
+  }
+  .header-bg {
+    height: 500px !important;
+  }
+  .header-bg .navbar-brand {
+    font-size: 18px !important;
   }
   .header-txt-1 h1 {
     font-size: 50px !important;
@@ -392,30 +461,38 @@ body {
   .header-txt-2 h1 {
     font-size: 20px !important;
   }
-  .th-name {
-    font-size: 11px !important;
-    padding: 5px !important;
+  .table-container .th-name {
+    font-size: 9px !important;
   }
   .coin-icon h5 {
-    font-size: 11px !important;
+    font-size: 9px !important;
     margin-top: 16px !important;
+  }
+  .coin-icon img {
+    width: 18px !important;
+    height: 18px !important;
+    margin-top: 7px !important;
+  }
+  .buy-btn {
+    height: 33px !important;
+    line-height: 1px !important;
+    padding: 0px 9px !important;
+    font-size: 9px !important;
+  }
+  .td-white {
+    font-size: 9px !important;
+  }
+  .red {
+    font-size: 9px !important;
+  }
+  .green {
+    font-size: 9px !important;
   }
   .spark-chart {
     width: 37px !important;
     height: 8px !important;
   }
-  .coin-icon img {
-    width: 24px !important;
-    height: 24px !important;
-  }
-  .buy-btn {
-    height: 40px !important;
-    padding: 0px 7px !important;
-    font-size: 11px !important;
-  }
-  .th-white {
-    font-size: 11px !important;
-  }
+
   .header-para p {
     color: rgb(255, 255, 255);
     font-size: 14px !important;
@@ -436,24 +513,36 @@ body {
     font-size: 20px !important;
   }
   .Crypto-overview-para p {
-    font-size: 8px;
+    font-size: 12px !important;
+    width: 86% !important;
+    line-height: 23px !important;
+    margin: 0 auto !important;
   }
   .co-left-items {
     display: inline !important;
   }
   .co-left-heading {
     margin-top: 40px;
+    width: 88% !important;
   }
   .co-left-item-heading {
     font-size: 11px !important;
   }
   .co-left-item-para {
-    width: 91%;
+    width: 91% !important;
+    font-size: 12px !important;
+  }
+  .Crypto-overview .Crypto-overview-features {
+    margin-top: 71px !important;
   }
   .Crypto-overview-Right img {
     width: 481px !important;
     margin-top: -120px !important;
     margin-left: -137px !important;
+  }
+  .main-home .acc-overview-section {
+    margin-top: -59px !important;
+    height: 200px !important;
   }
   .acc-overview-section {
     height: 235px !important;
@@ -462,7 +551,8 @@ body {
     margin-left: 59px !important;
   }
   .acc-overview-content h1 {
-    font-size: 12px;
+    font-size: 12px !important;
+    line-height: 30px !important;
   }
   .ps-div-1 h2 {
     font-size: 20px !important;
@@ -479,7 +569,12 @@ body {
     font-size: 11px !important;
   }
   .procedureSection {
-    height: 166px;
+    margin-top: 0px !important;
+    height: 165px !important;
+  }
+  .main-home .trade-overview-section {
+    margin-top: 130px !important;
+    height: 200px !important;
   }
   .trade-overview-content h1 {
     font-size: 12px;
@@ -542,20 +637,13 @@ body {
     margin-right: auto !important;
     margin-left: 0 !important;
   }
+  .price-table .th-name {
+    padding: 10px;
+    font-size: 9px !important;
+  }
   .s-no td {
     font-size: 7px !important;
     padding: 6px;
-  }
-  .table th {
-    font-size: 7px !important;
-  }
-  .coin-icon img {
-    width: 15px !important;
-    height: 15px !important;
-  }
-  .buy-btn {
-    width: 36px;
-    font-size: 8px !important;
   }
   .signUp-form {
     width: 394px !important;
@@ -577,19 +665,49 @@ body {
     margin-top: 20px;
     padding-right: 36px;
   }
+
   .HomeDash-bg {
     background: linear-gradient(to left, #6441a5, #2a0845);
     height: 2000px !important;
     overflow-x: hidden;
   }
+  .HomeDash-bg .navbar-brand-home-dash {
+    font-size: 18px !important;
+  }
+  .HomeDash-bg .home-dash-nav .nav-link {
+    font-size: 18px !important;
+  }
+  .HomeDash-bg .price-table {
+    margin-left: -15px !important;
+  }
   .home-portfolio {
     flex-direction: column !important;
+  }
+  .coin-text {
+    font-size: 30px !important;
   }
   .hp-div-2 {
     margin-left: -1px !important;
   }
+
+  .yp-txt h2 {
+    font-size: 30px !important;
+  }
   .yp-table {
     width: 100% !important;
+  }
+  .yp-table tr td {
+    font-size: 12px !important;
+  }
+  .assets-heading h2 {
+    font-size: 30px !important;
+  }
+  .assets-table {
+    margin-left: 17px !important;
+  }
+  .assets-table th {
+    font-size: 12px !important;
+    padding: 0px !important;
   }
   .hp-div-2 {
     margin-top: 86px !important;
@@ -679,6 +797,10 @@ body {
     font-size: 16px !important;
     margin-bottom: 11px;
   }
+  .newsfeed-heading {
+    margin-top: 50px !important;
+    font-size: 30px !important;
+  }
   .news-contents {
     margin-top: 80px !important;
     width: 70% !important;
@@ -688,7 +810,7 @@ body {
   .news-categories span {
     font-size: 14px !important;
   }
-  .news-title h2 {
+  .news-contents .news-title h2 {
     font-size: 18px !important;
   }
   .news-body p {
@@ -696,6 +818,478 @@ body {
   }
 }
 
+@media (max-width: 425px) {
+  .home-nav .nav-link {
+    font-size: 14px !important;
+  }
+  select.themes {
+    margin-left: -50px !important;
+    font-size: 14px !important;
+  }
+  .signin-link {
+    font-size: 14px !important;
+  }
+  .header-bg {
+    height: 500px !important;
+  }
+  .header-bg .navbar-brand {
+    font-size: 18px !important;
+  }
+  .header-txt-1 h1 {
+    font-size: 50px !important;
+  }
+  .header-txt-2 h1 {
+    font-size: 20px !important;
+  }
+  .table-container .th-name {
+    font-size: 9px !important;
+  }
+  .coin-icon h5 {
+    font-size: 9px !important;
+    margin-top: 16px !important;
+  }
+  .coin-icon img {
+    width: 18px !important;
+    height: 18px !important;
+    margin-top: 7px !important;
+  }
+  .buy-btn {
+    height: 33px !important;
+    line-height: 1px !important;
+    padding: 0px 9px !important;
+    font-size: 9px !important;
+  }
+  .td-white {
+    font-size: 9px !important;
+  }
+  .red {
+    font-size: 9px !important;
+  }
+  .green {
+    font-size: 9px !important;
+  }
+  .spark-chart {
+    width: 37px !important;
+    height: 8px !important;
+  }
+
+  .header-para p {
+    color: rgb(255, 255, 255);
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 23px !important;
+    letter-spacing: 0.5px !important;
+    width: 347px !important;
+    font-family: "Roboto", sans-serif;
+  }
+  .form-inline input.header-search-bar {
+    width: 189px !important;
+  }
+  .search-btn {
+    padding: 11px !important;
+  }
+  .Crypto-overview-heading h1 {
+    line-height: 1.3;
+    font-size: 20px !important;
+  }
+  .Crypto-overview-para p {
+    font-size: 12px !important;
+    width: 86% !important;
+    line-height: 23px !important;
+    margin: 0 auto !important;
+  }
+  .co-left-items {
+    display: inline !important;
+  }
+  .co-left-heading {
+    margin-top: 40px;
+    width: 88% !important;
+  }
+  .co-left-item-heading {
+    font-size: 11px !important;
+  }
+  .co-left-item-para {
+    width: 91% !important;
+    font-size: 12px !important;
+  }
+  .Crypto-overview .Crypto-overview-features {
+    margin-top: 71px !important;
+  }
+  .Crypto-overview-Right img {
+    width: 481px !important;
+    margin-top: -120px !important;
+    margin-left: -137px !important;
+  }
+  .main-home .acc-overview-section {
+    margin-top: 30px !important;
+    height: 200px !important;
+  }
+  .acc-overview-section {
+    height: 235px !important;
+  }
+  .acc-overview-right img {
+    margin-left: 59px !important;
+  }
+  .acc-overview-content h1 {
+    font-size: 12px !important;
+    line-height: 30px !important;
+  }
+  .ps-div-1 h2 {
+    font-size: 20px !important;
+  }
+  .ps-div-1 p {
+    font-size: 11px !important;
+  }
+  .ps-div-2 img {
+    width: 57px !important;
+    height: 57px !important;
+    margin-left: 25px !important;
+  }
+  .cr-txt span {
+    font-size: 11px !important;
+  }
+  .procedureSection {
+    margin-top: 0px !important;
+    height: 165px !important;
+  }
+  .main-home .trade-overview-section {
+    margin-top: 130px !important;
+    height: 200px !important;
+  }
+  .trade-overview-content h1 {
+    font-size: 12px;
+  }
+  .trade-overview-right img {
+    width: 62%;
+    margin-left: 65px !important;
+  }
+  .footer-details p {
+    color: white;
+    font-size: 11px;
+  }
+  .copyright-span span {
+    font-size: 12px !important;
+  }
+  .signIn-form {
+    width: 350px !important;
+  }
+  .form-group1 {
+    height: 503px !important;
+    padding: 0 20px !important;
+  }
+  .form-group1 img {
+    margin-top: 60px !important;
+    width: 79px !important;
+    height: 150px !important;
+  }
+  .form-group1 h2 {
+    line-height: 0px !important;
+    font-size: 20px !important;
+  }
+  .signIn-form-2 {
+    width: 267px !important;
+  }
+  .form-group-2 {
+    margin-top: 35px !important;
+    width: 238px !important;
+    padding: 0 18px !important;
+  }
+  .form-group-3 {
+    margin-top: 40px !important;
+    width: 200px !important;
+  }
+  .form-group-5 {
+    width: 238px !important;
+  }
+  .form-check {
+    margin-top: 35px !important;
+    width: 204px !important;
+  }
+  .signin-btn {
+    margin-left: -50px !important;
+  }
+  label {
+    color: #e047db !important;
+    font-size: 7px !important;
+  }
+  .price-table-container {
+    padding-right: 15px !important;
+    margin-right: auto !important;
+    margin-left: 0 !important;
+  }
+  .price-table .th-name {
+    padding: 10px;
+    font-size: 9px !important;
+  }
+  .s-no td {
+    font-size: 7px !important;
+    padding: 6px;
+  }
+  .signUp-form {
+    width: 394px !important;
+  }
+  .signup-form-group1 {
+    width: 154px !important;
+  }
+  .signup-form-group1 img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .signup-form-group1 h2 {
+    font-size: 18px !important;
+  }
+  .signUp-form-2 {
+    width: 270px !important;
+  }
+  .signUp-form .form-group-5 {
+    margin-top: 20px;
+    padding-right: 36px;
+  }
+
+  .HomeDash-bg {
+    background: linear-gradient(to left, #6441a5, #2a0845);
+    height: 2000px !important;
+    overflow-x: hidden;
+  }
+  .HomeDash-bg .navbar-brand-home-dash {
+    font-size: 18px !important;
+  }
+  .HomeDash-bg .home-dash-nav .nav-link {
+    font-size: 18px !important;
+  }
+  .HomeDash-bg .price-table {
+    margin-left: -15px !important;
+  }
+  .home-portfolio {
+    flex-direction: column !important;
+  }
+  .coin-text {
+    font-size: 30px !important;
+  }
+  .hp-div-2 {
+    margin-left: -1px !important;
+  }
+
+  .yp-txt h2 {
+    font-size: 30px !important;
+  }
+  .yp-table {
+    width: 100% !important;
+  }
+  .yp-table tr td {
+    font-size: 12px !important;
+  }
+  .assets-heading h2 {
+    font-size: 30px !important;
+  }
+  .assets-table {
+    margin-left: 17px !important;
+  }
+  .assets-table th {
+    font-size: 12px !important;
+    padding: 0px !important;
+  }
+  .hp-div-2 {
+    margin-top: 86px !important;
+    width: 85% !important;
+  }
+  .pie-div {
+    margin-top: 40px;
+    box-shadow: 2px 6px 24px 4px #1b171a8f;
+    background-color: white;
+    border-radius: 14px;
+    width: 355px;
+  }
+  .nav-items {
+    width: 200px !important;
+  }
+  .send-input {
+    width: 306px !important;
+    height: 84px !important;
+    padding-left: 100px;
+    font-size: 26px !important;
+  }
+  .prt-main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .prt-balance {
+    margin-bottom: 29px;
+  }
+  .prt-transaction {
+    width: 70% !important;
+  }
+  .recieve-body-3 {
+    display: flex;
+    margin-left: 0px !important;
+  }
+  .modal-content {
+    width: 84%;
+    margin: 0 auto;
+  }
+  .modal-body p {
+    margin-top: 17px;
+    width: 260px !important;
+    color: white;
+  }
+  .send-body-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .send-body-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .send-body-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .send-body-2 input {
+    width: 250px;
+    margin-left: 2px !important;
+  }
+  .send-body-3 {
+    display: flex;
+    margin-left: 0px !important;
+  }
+  .send-body-3 select {
+    border-radius: 5px;
+    margin-left: 0px;
+    font-size: 16px;
+  }
+  .send-body-3 select {
+    border-radius: 5px;
+    margin-left: 0px;
+    font-size: 16px;
+    width: 254px;
+    height: 36px;
+  }
+
+  .send-body-1,
+  .send-body-2,
+  .send-body-3,
+  label {
+    color: #f75e3c !important;
+    font-size: 16px !important;
+    margin-bottom: 11px;
+  }
+  .newsfeed-heading {
+    margin-top: 50px !important;
+    font-size: 30px !important;
+  }
+  .news-contents {
+    margin-top: 80px !important;
+    width: 70% !important;
+    margin: 0 auto !important;
+    margin-bottom: 50px !important;
+  }
+  .news-categories span {
+    font-size: 14px !important;
+  }
+  .news-contents .news-title h2 {
+    font-size: 18px !important;
+  }
+  .news-body p {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 405px), (max-width: 420px) {
+  .header-txt-2 h1 {
+    margin: 13px !important;
+  }
+  .header-para p {
+    font-size: 12px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .asset-table {
+    margin-top: -30px !important;
+    width: 90% !important;
+  }
+  .Crypto-overview-item-1 {
+    margin-top: -19px !important;
+  }
+  .Crypto-overview-heading h1 {
+    font-size: 18px !important;
+  }
+  .main-home .acc-overview-section {
+    margin-top: -79px !important;
+    height: 200px !important;
+  }
+  .acc-overview-right img {
+    height: 134px !important;
+  }
+  .trade-overview-right img {
+    width: 62% !important;
+    margin-left: 61px !important;
+  }
+  .trade-overview-content h1 {
+    line-height: 38px !important;
+  }
+  .user-menu {
+    top: -255px !important;
+    left: -459px !important;
+  }
+  .navbar-brand-home-dash {
+    padding: 7px 31px !important;
+  }
+  .HomeDash-bg .home-dash-nav .nav-link {
+    font-size: 14px !important;
+  }
+  .hp-div-2-txt {
+    width: 293px !important;
+  }
+  .total-balance-div h2 {
+    font-size: 17px;
+  }
+  .HomeDash-bg .price-table {
+    margin-left: -21px !important;
+  }
+  .buy-btn {
+    line-height: 1px !important;
+    padding: 0px 5px !important;
+  }
+  .form-check-input {
+    position: absolute;
+    margin-top: 4px;
+  }
+  .form-check-label {
+    margin-left: 10px !important;
+  }
+  .signUp-form {
+    width: 380px !important;
+  }
+  .signup-form-group1 h2 {
+    font-size: 16px !important;
+  }
+  .coin-icon img {
+    margin-top: 10px !important;
+  }
+  .coin-icon h5 {
+    font-size: 8px !important;
+    margin-top: 17px !important;
+  }
+  .coin-input {
+    width: 212px !important;
+    height: 44px !important;
+  }
+}
+@media (max-width: 385px) {
+  .price-table .th-name {
+    padding: 6px !important;
+    font-size: 9px !important;
+  }
+
+  .HomeDash-bg .price-table .th-name {
+    padding: 8px;
+    font-size: 9px !important;
+  }
+}
 @media (max-width: 375px) {
   .home-nav .nav-link {
     font-size: 14px;
@@ -707,7 +1301,7 @@ body {
     font-size: 18px !important;
   }
   .header-para p {
-    font-size: 11px !important;
+    font-size: 9px !important;
     text-align: center !important;
     line-height: 20px !important;
   }
@@ -719,7 +1313,7 @@ body {
     padding: 5px !important;
   }
   .coin-icon h5 {
-    font-size: 11px !important;
+    font-size: 7px !important;
     margin-top: 16px !important;
   }
   .td-white {
@@ -731,6 +1325,9 @@ body {
   .spark-chart {
     width: 37px !important;
     height: 8px !important;
+  }
+  .HomeDash-bg .price-table {
+    margin-left: 0px !important;
   }
   .coin-icon img {
     width: 24px !important;
@@ -768,19 +1365,24 @@ body {
   .co-left-item-para {
     width: 91%;
   }
+  .Crypto-overview {
+    margin-top: 58px !important;
+  }
   .Crypto-overview-Right img {
     width: 481px !important;
     margin-top: -120px !important;
-    margin-left: -137px !important;
+    margin-left: -146px !important;
   }
-  .acc-overview-section {
-    height: 235px !important;
+  .main-home .acc-overview-section {
+    margin-top: 0px !important;
+    height: 170px !important;
   }
   .acc-overview-right img {
     margin-left: 59px !important;
   }
   .acc-overview-content h1 {
-    font-size: 12px;
+    font-size: 12px !important;
+    line-height: 26px !important;
   }
   .ps-div-1 h2 {
     font-size: 20px !important;
@@ -799,8 +1401,13 @@ body {
   .procedureSection {
     height: 166px;
   }
+  .main-home .trade-overview-section {
+    margin-top: 200px !important;
+    height: 170px !important;
+  }
   .trade-overview-content h1 {
     font-size: 12px;
+    line-height: 26px !important;
   }
   .trade-overview-right img {
     width: 62%;
@@ -861,6 +1468,10 @@ body {
     margin-right: auto !important;
     margin-left: 0 !important;
   }
+  .price-table .th-name {
+    padding: 3px !important;
+    font-size: 7px !important;
+  }
   .price-bg .price-table {
     margin-left: 0px !important;
   }
@@ -877,7 +1488,9 @@ body {
   }
   .buy-btn {
     width: 36px;
-    font-size: 8px !important;
+    font-size: 7px !important;
+    padding: 0px 4px !important;
+    height: 25px !important;
   }
   .signUp-form {
     width: 343px !important;
@@ -918,6 +1531,22 @@ body {
     height: 2000px !important;
     overflow-x: hidden;
   }
+
+  nav .user-menu {
+    top: -266px !important;
+    margin-left: 479px !important;
+  }
+  .homeDash-navbar {
+    padding-left: 13px !important;
+  }
+  .HomeDash-bg .navbar-brand-home-dash {
+    font-size: 16px !important;
+    padding: 7px 31px !important;
+  }
+  .HomeDash-bg .home-dash-nav .nav-link {
+    font-size: 16px !important;
+  }
+
   .home-portfolio {
     flex-direction: column !important;
   }
@@ -928,7 +1557,7 @@ body {
     width: 312px !important;
   }
   .yp-txt h2 {
-    font-size: 36px !important;
+    font-size: 25px !important;
   }
   .hp-div-2 {
     margin-top: 86px !important;
@@ -952,10 +1581,7 @@ body {
     margin-left: -20px;
   }
   .coin-text {
-    margin-bottom: 32px;
-    text-align: center;
-    margin-top: 36px;
-    font-size: 30px;
+    font-size: 25px !important;
   }
   .coin-input {
     padding-left: 16px;
@@ -1007,6 +1633,9 @@ body {
 }
 
 @media (max-width: 360px) {
+  select.themes {
+    margin-left: -89px !important;
+  }
   .header-para p {
     font-size: 8px !important;
   }
@@ -1025,13 +1654,20 @@ body {
   .table .asset-table {
     width: 400px !important;
   }
-  .table-container .coin-icon img{
+  .table-container .th-name {
+    font-size: 9px !important;
+    padding: 15px !important;
+  }
+  .table-container .coin-icon img {
     margin-top: 8px !important;
   }
   .table-container .coin-icon h5 {
     font-size: 10px !important;
-    margin-top: 19px !important;
-}
+    margin-top: 13px !important;
+  }
+  .buy-btn {
+    padding: 0px 7px !important;
+  }
   .coin-icon img {
     margin-top: 14px !important;
   }
@@ -1071,6 +1707,10 @@ body {
     margin-top: -120px !important;
     margin-left: -137px !important;
   }
+  .main-home .acc-overview-section {
+    margin-top: -80px !important;
+    height: 213px !important;
+  }
   .acc-overview-right img {
     margin-left: 8px !important;
     width: 90% !important;
@@ -1078,7 +1718,10 @@ body {
   .acc-overview-content h1 {
     line-height: 34px !important;
   }
-
+  .procedureSection {
+    margin-top: 0px !important;
+    height: 129px !important;
+  }
   .cr-txt span {
     color: white;
     margin-left: 11px;
@@ -1086,6 +1729,10 @@ body {
   }
   .ps-div-2 img {
     margin-left: 33px;
+  }
+  .main-home .trade-overview-section {
+    margin-top: 200px !important;
+    height: 221px !important;
   }
   .trade-overview-right img {
     margin-left: 8px !important;
@@ -1240,17 +1887,23 @@ body {
   .coin-icon img {
     margin-top: 16px !important;
   }
+  .coin-input {
+    width: 200px !important;
+    height: 40px !important;
+  }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 320px), (max-width: 330px) {
   .navbar-light .navbar-toggler {
     position: absolute !important;
     left: 230px !important;
     top: 29px !important;
-    padding: 5px !important;
-    height: 38px !important;
+    padding: 8px !important;
+    height: 34px !important;
   }
-
+  .main-nav {
+    left: -78px !important;
+  }
   select.themes {
     font-size: 12px !important;
     margin-left: -86px !important;
@@ -1268,6 +1921,17 @@ body {
   }
   .search-btn {
     font-size: 10px !important;
+  }
+  .table-container .th-name {
+    font-size: 9px !important;
+    padding: 10px !important;
+  }
+  .table-container .coin-icon img {
+    margin-top: 14px !important;
+  }
+  .table-container .coin-icon h5 {
+    font-size: 10px !important;
+    margin-top: 16px !important;
   }
   .table .asset-table {
     width: 400px !important;
@@ -1292,7 +1956,12 @@ body {
     font-size: 14px !important;
   }
   .Crypto-overview-para p {
-    font-size: 6px !important;
+    font-size: 9px !important;
+    line-height: 18px !important;
+  }
+  .co-left-sub-items img {
+    width: 50px !important;
+    height: 50px !important;
   }
   .co-left-item-heading {
     font-size: 7px !important;
@@ -1306,7 +1975,17 @@ body {
     margin-top: -120px !important;
     margin-left: -137px !important;
   }
+  .main-home .acc-overview-section {
+    margin-top: -95px !important;
+    height: 170px !important;
+  }
+  .acc-overview-content h1 {
+    line-height: 28px !important;
+    font-size: 12px !important;
+  }
   .acc-overview-right img {
+    width: 63% !important;
+    height: 117px !important;
     margin-left: 41px !important;
   }
   .cr-txt span {
@@ -1316,6 +1995,9 @@ body {
   }
   .ps-div-2 img {
     margin-left: 33px !important;
+  }
+  .trade-overview-content h1 {
+    line-height: 28px !important;
   }
   .trade-overview-right img {
     width: 62% !important;
@@ -1380,6 +2062,10 @@ body {
     margin-top: 17px !important;
     width: 198px !important;
   }
+  .newsfeed-heading {
+    margin-top: 50px !important;
+    font-size: 25px !important;
+  }
   .news-title h2 {
     font-size: 14px !important;
   }
@@ -1394,10 +2080,16 @@ body {
     font-size: 12px !important;
   }
   .yp-txt h2 {
-    font-size: 30px !important;
+    font-size: 20px !important;
   }
   .hp-div-2-txt {
     width: 255px !important;
+  }
+  .HomeDash-bg .home-dash-nav .nav-link {
+    font-size: 14px !important;
+  }
+  .HomeDash-bg .price-table {
+    margin-left: -18px !important;
   }
   .total-balance-div {
     width: 243px !important;
@@ -1405,8 +2097,15 @@ body {
   .total-balance-div h2 {
     padding: 12px !important;
   }
+  .coin-input {
+    width: 180px !important;
+    height: 42px !important;
+  }
+  .user-item {
+    left: -24px !important;
+  }
 }
-@media (max-width: 286px), (max-width: 287px) {
+@media (max-width: 286px), (max-width: 300px) {
   .asset-table.table td,
   .table th {
     border: none !important;
@@ -1626,7 +2325,31 @@ body {
   }
 }
 
-@media (max-width: 283px) {
+@media (max-width: 282px) {
+  .navbar-light .navbar-brand {
+    font-size: 14px !important;
+  }
+  .home-nav .nav-link {
+    font-size: 10px !important;
+  }
+  .signin-link {
+    font-size: 10px !important;
+  }
+  .table-container .th-name {
+    padding: 0 11px !important;
+    font-size: 8px !important;
+  }
+  .table-container .coin-icon h5 {
+    font-size: 6px !important;
+    margin-top: 19px !important;
+  }
+  .table-container .coin-icon img {
+    margin-top: 15px !important;
+    margin-left: 14px !important;
+  }
+  .asset-table {
+    margin-top: 60px !important;
+  }
   .asset-table.table td,
   .table th {
     border: none !important;
@@ -1649,7 +2372,7 @@ body {
     font-size: 12px !important;
   }
   .Crypto-overview-para p {
-    font-size: 7px !important;
+    font-size: 8px !important;
     line-height: 17px !important;
     text-align: center !important;
     width: 100% !important;
@@ -1668,8 +2391,9 @@ body {
     margin-top: 33px !important;
   }
   .co-left-item-para {
-    width: 166px !important;
+    width: 133px !important;
     padding-left: 0px !important;
+    font-size: 7px !important;
   }
   .Crypto-overview-Right img {
     width: 359px !important;
@@ -1683,17 +2407,29 @@ body {
   .acc-overview-content h1 {
     width: 89% !important;
     font-size: 10px;
-    line-height: 28px !important;
+    line-height: 26px !important;
     margin-left: 14px !important;
+    font-size: 9px !important;
   }
   .acc-overview-right img {
     width: 113px !important;
     margin-left: 17px !important;
-    height: 107px !important;
+    height: 93px !important;
   }
   .acc-overview-section {
     height: 300px !important;
   }
+  .ps-div-1 h2 {
+    font-size: 18px !important;
+  }
+  .ps-div-1 p {
+    font-size: 9px !important;
+  }
+  .procedureSection {
+    margin-top: 0px !important;
+    height: 95px !important;
+  }
+
   .cr-txt span {
     color: white !important;
     margin-left: 17px !important;
@@ -1753,6 +2489,19 @@ body {
     padding-top: 119px !important;
     padding-left: 0px !important;
   }
+  .HomeDash-bg .home-dash-nav .nav-link {
+    font-size: 10px !important;
+  }
+  .HomeDash-bg .price-table {
+    margin-left: -21px !important;
+  }
+  nav .user-menu {
+    top: -237px !important;
+    margin-left: 479px !important;
+  }
+  .yp-table tr td {
+    font-size: 8px !important;
+  }
   .yp-txt h2 {
     font-size: 25px !important;
   }
@@ -1769,14 +2518,20 @@ body {
   }
   .total-balance-div h2 {
     font-size: 9px !important;
-    padding: 15px !important;
+    padding: 11px !important;
   }
   .hp-div-2-txt {
     width: 220px !important;
   }
   .hp-div-2-txt h2 {
-    font-size: 18px !important;
+    font-size: 14px !important;
     padding: 5px;
+  }
+  .hp-div-2-para p {
+    font-size: 8px !important;
+  }
+  .transaction p {
+    font-size: 8px !important;
   }
   .coin-text {
     font-size: 22px !important;
@@ -1806,13 +2561,17 @@ body {
     padding: 2px !important;
     font-size: 6px !important;
   }
+  .s-no td {
+    font-size: 7px !important;
+    padding: 1px !important;
+  }
   .buy-btn {
-    width: 27px !important;
+    width: 23px !important;
     line-height: 3px;
     height: 18px !important;
     padding: 0px 2px !important;
     font-size: 14px !important;
-    font-size: 7px !important;
+    font-size: 6px !important;
   }
   .assets-heading h2 {
     font-size: 25px !important;
@@ -1849,10 +2608,16 @@ body {
   .user-item {
     left: -24px !important;
   }
+  .news-contents .news-title h2 {
+    font-size: 12px !important;
+  }
   .newsfeed-heading {
     margin-top: 44px !important;
   }
   .news-title h2 {
     font-size: 12px !important;
+  }
+  .news-body p {
+    font-size: 7px !important;
   }
 }
